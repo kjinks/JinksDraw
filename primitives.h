@@ -10,11 +10,6 @@
 
 namespace JinksDraw
 {
-  /*!
-    \class Point
-    \brief This class models a point in 2D space
-  */
-
   class Point
   {
   private:
@@ -34,28 +29,28 @@ namespace JinksDraw
   class Line
   {
   private:
-    Point start;
-    Point end;
+    Point* start;
+    Point* end;
   public:
-    Line(Point& start, Point& end);
+    Line(const Point& start, const Point& end);
   };
 
   class Circle
   {
   private:
-    Point origin;
+    Point* origin;
     double radius;
   public:
-    Circle(Point& origin, double radius);
+    Circle(const Point& origin, double radius);
   };
 
   class Rectangle
   {
   private:
-    Point lowerLeft;
-    Point upperRight;
+    Point* lowerLeft;
+    Point* upperRight;
   public:
-    Rectangle(Point& lowerLeft, Point& upperRight);
+    Rectangle(const Point& lowerLeft, const Point& upperRight);
   };
 }
 

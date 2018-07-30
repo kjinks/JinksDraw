@@ -9,7 +9,10 @@ brought together to build more complex geometries.
 
 namespace JinksDraw
 {
-
+/*!
+  \class Point
+  \brief This class models a point in 2D space
+*/
     Point::Point(double x, double y)
     {
       this->x = x;
