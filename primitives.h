@@ -3,18 +3,19 @@
 \date Aug 2018
 \file primitives.h
 \brief This file contains the prototypes for primitives.cpp
+\brief and is documented using Doxygen markup
 */
 
 #ifndef _PRIMITIVES_H_
 #define _PRIMITIVES_H_
 
-#include <vector>
+#include <list>
 
 namespace JinksDraw
 {
   /*!
     \class Primitive
-    \brief Empty class that all primitives inhert from. Useful for making lists.
+    \brief Empty class that all primitives inherit from. Useful for making lists.
   */
   class Primitive
   {
@@ -74,7 +75,7 @@ namespace JinksDraw
   /*!
   \class Line : public Primitive
   \brief This class models a 2D line with starting and ending points.
-  \brief Methods include Intersection, Midpoint, Length, Angle...
+  \brief Methods include Intersection, Subpoint, Length, Angle...
   \brief more methods may be created in the future
   */
   class Line : public Primitive
@@ -88,6 +89,7 @@ namespace JinksDraw
     */
     Point* start;
     Point* end;
+    
   public:
     /*!
     \fn Line(const Point& start, const Point& end)
@@ -118,12 +120,41 @@ namespace JinksDraw
     void setEnd(const Point& newEnd);
 
     /*!
-    \fn std::vector<Point*> intersection(const Line& intersectingLine)
+    \fn std::list<Point*> intersection(const Line& intersectingLine)
     \brief returns the intersection of this line and another line if any
     \brief future plans to turn this into a template that will accept any primitive
     */
-    std::vector<Point*> intersection(const Line& intersectingLine);
+    std::list<Point*> intersection(const Line& intersectingLine);
 
+    /*!
+    \fn std::list<Point*> subpoint(int divisions = 2)
+    \brief returns a list of points that subdivide the line,
+    \brief the default of 2 gives the midpoint
+    \param int divisions = 2
+    \brief the number of divisions of the line
+    */
+    std::list<Point*> subpoint(int divisions = 2);
+
+    /*!
+    \fn std::list<Line*> subline(int divisions = 2)
+    \brief returns a list of lines that subdivide the line
+    \brief the default of 2 gives 2 equal halves
+    \param int divisions = 2
+    \brief the number of divisions of the line
+    */
+    std::list<Line*> subline(int divisions = 2);
+
+    /*!
+    \fn double getLength()
+    \brief calculates and returns the length of the line
+    */
+    double getLength();
+
+    /*!
+    \fn double getAngle()
+    \brief calculates and returns the angle of the line in radians
+    */
+    double getAngle();
   };
 
   class Circle : public Primitive

@@ -111,13 +111,22 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aed901521fdf3c6ded597c63253b4a26a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_jinks_draw_1_1_line.html#aed901521fdf3c6ded597c63253b4a26a">setEnd</a> (const <a class="el" href="class_jinks_draw_1_1_point.html">Point</a> &amp;newEnd)</td></tr>
 <tr class="memdesc:aed901521fdf3c6ded597c63253b4a26a"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the end to a new <a class="el" href="class_jinks_draw_1_1_point.html" title="This class models a point in 2D space with an x and a y coordinate.">Point</a>  <a href="#aed901521fdf3c6ded597c63253b4a26a">More...</a><br /></td></tr>
 <tr class="separator:aed901521fdf3c6ded597c63253b4a26a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb70c9bd53234ecff92bcbce23a76b15"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_jinks_draw_1_1_point.html">Point</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_jinks_draw_1_1_line.html#acb70c9bd53234ecff92bcbce23a76b15">intersection</a> (const <a class="el" href="class_jinks_draw_1_1_line.html">Line</a> &amp;intersectingLine)</td></tr>
-<tr class="memdesc:acb70c9bd53234ecff92bcbce23a76b15"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the intersection of this line and another line if any  <a href="#acb70c9bd53234ecff92bcbce23a76b15">More...</a><br /></td></tr>
-<tr class="separator:acb70c9bd53234ecff92bcbce23a76b15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb03478eaa395ca0bb6bf638de8806d0"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="class_jinks_draw_1_1_point.html">Point</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_jinks_draw_1_1_line.html#abb03478eaa395ca0bb6bf638de8806d0">intersection</a> (const <a class="el" href="class_jinks_draw_1_1_line.html">Line</a> &amp;intersectingLine)</td></tr>
+<tr class="memdesc:abb03478eaa395ca0bb6bf638de8806d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the intersection of this line and another line if any  <a href="#abb03478eaa395ca0bb6bf638de8806d0">More...</a><br /></td></tr>
+<tr class="separator:abb03478eaa395ca0bb6bf638de8806d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a181f4d5cf12d1ded6b85f148e2ef6a93"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="class_jinks_draw_1_1_point.html">Point</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_jinks_draw_1_1_line.html#a181f4d5cf12d1ded6b85f148e2ef6a93">subpoint</a> (int divisions=2)</td></tr>
+<tr class="memdesc:a181f4d5cf12d1ded6b85f148e2ef6a93"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns a list of points that subdivide the line,  <a href="#a181f4d5cf12d1ded6b85f148e2ef6a93">More...</a><br /></td></tr>
+<tr class="separator:a181f4d5cf12d1ded6b85f148e2ef6a93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb77107e932c68b88be7e32344db1de4"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_jinks_draw_1_1_line.html#aeb77107e932c68b88be7e32344db1de4">getLength</a> ()</td></tr>
+<tr class="memdesc:aeb77107e932c68b88be7e32344db1de4"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculates and returns the length of the line  <a href="#aeb77107e932c68b88be7e32344db1de4">More...</a><br /></td></tr>
+<tr class="separator:aeb77107e932c68b88be7e32344db1de4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae344d8ad62e6044cfa2a5d31e1262d00"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_jinks_draw_1_1_line.html#ae344d8ad62e6044cfa2a5d31e1262d00">getAngle</a> ()</td></tr>
+<tr class="memdesc:ae344d8ad62e6044cfa2a5d31e1262d00"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculates and returns the angle of the line in radians  <a href="#ae344d8ad62e6044cfa2a5d31e1262d00">More...</a><br /></td></tr>
+<tr class="separator:ae344d8ad62e6044cfa2a5d31e1262d00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p class="">This class models a 2D line with starting and ending points. </p>
-<p class="">Methods include Intersection, Midpoint, Length, Angle... more methods may be created in the future </p>
+<p class="">Methods include Intersection, Subpoint, Length, Angle... more methods may be created in the future </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a71ecc5499178fe5cbd5547bc234c650c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a71ecc5499178fe5cbd5547bc234c650c">&#9670;&nbsp;</a></span>Line()</h2>
@@ -157,6 +166,25 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae344d8ad62e6044cfa2a5d31e1262d00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae344d8ad62e6044cfa2a5d31e1262d00">&#9670;&nbsp;</a></span>getAngle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double JinksDraw::Line::getAngle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>calculates and returns the angle of the line in radians </p>
+
+</div>
+</div>
 <a id="a6d0c3c1b398bbe5dcadecaff9e71720b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6d0c3c1b398bbe5dcadecaff9e71720b">&#9670;&nbsp;</a></span>getEnd()</h2>
 
@@ -173,6 +201,25 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>returns a pointer to the end <a class="el" href="class_jinks_draw_1_1_point.html" title="This class models a point in 2D space with an x and a y coordinate.">Point</a> </p>
+
+</div>
+</div>
+<a id="aeb77107e932c68b88be7e32344db1de4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb77107e932c68b88be7e32344db1de4">&#9670;&nbsp;</a></span>getLength()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double JinksDraw::Line::getLength </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>calculates and returns the length of the line </p>
 
 </div>
 </div>
@@ -195,14 +242,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="acb70c9bd53234ecff92bcbce23a76b15"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acb70c9bd53234ecff92bcbce23a76b15">&#9670;&nbsp;</a></span>intersection()</h2>
+<a id="abb03478eaa395ca0bb6bf638de8806d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb03478eaa395ca0bb6bf638de8806d0">&#9670;&nbsp;</a></span>intersection()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; <a class="el" href="class_jinks_draw_1_1_point.html">Point</a> * &gt; JinksDraw::Line::intersection </td>
+          <td class="memname">std::list&lt; <a class="el" href="class_jinks_draw_1_1_point.html">Point</a> * &gt; JinksDraw::Line::intersection </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_jinks_draw_1_1_line.html">Line</a> &amp;&#160;</td>
           <td class="paramname"><em>intersectingLine</em></td><td>)</td>
@@ -253,6 +300,32 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>sets the start to a new <a class="el" href="class_jinks_draw_1_1_point.html" title="This class models a point in 2D space with an x and a y coordinate.">Point</a> </p>
+
+</div>
+</div>
+<a id="a181f4d5cf12d1ded6b85f148e2ef6a93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a181f4d5cf12d1ded6b85f148e2ef6a93">&#9670;&nbsp;</a></span>subpoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::list&lt; <a class="el" href="class_jinks_draw_1_1_point.html">Point</a> * &gt; JinksDraw::Line::subpoint </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>divisions</em> = <code>2</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>returns a list of points that subdivide the line, </p>
+<p class="">the default of 2 gives the midpoint </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">int</td><td>divisions = 2 the number of divisions of the line </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

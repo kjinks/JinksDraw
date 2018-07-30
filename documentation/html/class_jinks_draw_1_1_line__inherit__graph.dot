@@ -5,5 +5,5 @@ digraph "JinksDraw::Line"
   node [fontname="Helvetica",fontsize="10",shape=record];
   Node0 [label="JinksDraw::Line",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="This class models a 2D line with starting and ending points."];
   Node1 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node1 [label="JinksDraw::Primitive",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_jinks_draw_1_1_primitive.html",tooltip="Empty class that all primitives inhert from. Useful for making lists."];
+  Node1 [label="JinksDraw::Primitive",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_jinks_draw_1_1_primitive.html",tooltip="Empty class that all primitives inherit from. Useful for making lists."];
 }
