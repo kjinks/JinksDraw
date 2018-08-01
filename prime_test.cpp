@@ -151,10 +151,6 @@ bool testClassLine()
 
   std::cout << "Line class intersection created " << points.size() << " point(s)" << '\n';
 
-  //test destructor
-  delete(&l);
-  std::cout << "Line class destroyed successfully" << '\n';
-
   return result;
 }
 
