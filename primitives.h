@@ -182,6 +182,12 @@ namespace JinksDraw
   \brief This class models a 2D line with a deque of points.
   \brief Methods include Intersection, Subpoint, Length, Angle...
   \brief more methods may be created in the future
+  \brief Operator ostream is implemented
+  \code{.cpp}
+  Point p1 = Point(1.0, 2.0)
+  Point p2 = Point(3.0, 4.0)
+  cout << Line(p1, p2) << endl; // ((1.0, 2.0), (3.0, 4.0))
+  \endcode
   */
   class Line : public Primitive
   {
@@ -278,6 +284,18 @@ namespace JinksDraw
     \return the angle in radians
     */
     double getAngle();
+
+    /*!
+    \fn friend std::ostream& operator<<(std::ostream& os, const Line& ln)
+    \brief this allows Line to have a stream representation
+    \code{.cpp}
+    Point p1 = Point(1.0, 2.0)
+    Point p2 = Point(3.0, 4.0)
+    cout << Line(p1, p2) << endl; // ((1.0, 2.0), (3.0, 4.0))
+    \endcode
+    */
+    friend std::ostream& operator<<(std::ostream& os, const Line& ln);
+
   };
 
   class Circle : public Primitive

@@ -82,7 +82,7 @@ bool testClassLine()
   //test constructor
   Line l = Line(startP, endP);
   std::cout << "Line class instantiated successfully" << '\n';
-
+  std::cout << "Line created : " << l << '\n';
 
   //test accessors
   if (&(l.getStart()) == &(startP))
@@ -147,6 +147,8 @@ bool testClassLine()
 
   std::cout << "Line class intersection created " << points.size() << " point(s)" << '\n';
 
+  std::cout << "from lines " << l << " and " << l2 <<  '\n';
+
   for (auto point = points.begin(); point != points.end(); ++point)
   {
     std::cout << "Point found " << *point << '\n';
@@ -159,6 +161,15 @@ bool testClassLine()
   for (auto point = points.begin(); point != points.end(); ++point)
   {
     std::cout << "Point found " << *point << '\n';
+  }
+
+  std::vector<Line> lines = l.subline(4);
+
+  std::cout << "Line class subline created " << lines.size() << " line(s)" << '\n';
+
+  for (auto line = lines.begin(); line != lines.end(); ++line)
+  {
+    std::cout << "Line found " << *line << '\n';
   }
 
   return result;

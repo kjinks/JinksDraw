@@ -4,13 +4,12 @@
 \file primitives.cpp
 \brief Primitives are modeled here. Primitives are basic geometries that can be
 brought together to build more complex geometries.
+\brief Doxygen documentation can be found in the header file
 */
 #include "primitives.h"
 
 #include <math.h>
 #include <iostream>
-
-
 
 #define _DEBUG_
 
@@ -219,5 +218,25 @@ namespace JinksDraw
       }
 
       return result;
+    }
+
+    std::vector<Line> Line::subline(int divisions)
+    {
+      std::vector<Point> points = this->subpoint(divisions);
+      std::vector<Line> lines;
+
+      for (int i = 0; i < divisions; i++)
+      {
+        //connect the adjacent points into lines
+        Line l = Line(points.at(i), points.at(i +1));
+        lines.push_back(l);
+      }
+      return lines;
+    }
+
+    std::ostream& operator<<(std::ostream& os, const Line& ln)
+    {
+      os << "(" << *(ln.start) << "," << *(ln.end) << ")";
+      return os;
     }
 }
