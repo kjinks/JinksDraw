@@ -1,0 +1,284 @@
+\hypertarget{class_jinks_draw_1_1_point}{}\section{Jinks\+Draw\+:\+:Point Class Reference}
+\label{class_jinks_draw_1_1_point}\index{Jinks\+Draw\+::\+Point@{Jinks\+Draw\+::\+Point}}
+
+
+This class models a point in 2D space with an x and a y coordinate.  
+
+
+
+
+{\ttfamily \#include $<$primitives.\+h$>$}
+
+Inheritance diagram for Jinks\+Draw\+:\+:Point\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_jinks_draw_1_1_point}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_jinks_draw_1_1_point_a052cf69d98628f9ee7fd6649c401c409}{Point}} (double \mbox{\hyperlink{class_jinks_draw_1_1_point_a49a46c3d78c0c68260d55dacdee458de}{x}}=0.\+0, double \mbox{\hyperlink{class_jinks_draw_1_1_point_ad2dbfbd07baf41cfe82737a4f347bab5}{y}}=0.\+0)
+\begin{DoxyCompactList}\small\item\em the \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} constructor \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_jinks_draw_1_1_point_ab7f568b7614e93baeb6a2b80ae6d4eda}{getX}} ()
+\begin{DoxyCompactList}\small\item\em access the x coordinate \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_jinks_draw_1_1_point_a3dcffb5d490aa4c17a6d468b944fc590}{getY}} ()
+\begin{DoxyCompactList}\small\item\em access the y coordinate \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_jinks_draw_1_1_point_a88c728619ffd56b0a05e73aa12a749e1}{setX}} (double \mbox{\hyperlink{class_jinks_draw_1_1_point_a49a46c3d78c0c68260d55dacdee458de}{x}})
+\begin{DoxyCompactList}\small\item\em sets the x coordinate \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_jinks_draw_1_1_point_a828cbcb4a21065420758e422265dc35f}{setY}} (double \mbox{\hyperlink{class_jinks_draw_1_1_point_ad2dbfbd07baf41cfe82737a4f347bab5}{y}})
+\begin{DoxyCompactList}\small\item\em sets the y coordinate \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_jinks_draw_1_1_point_a49a46c3d78c0c68260d55dacdee458de}{x}}
+\begin{DoxyCompactList}\small\item\em the x coordinate \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_jinks_draw_1_1_point_ad2dbfbd07baf41cfe82737a4f347bab5}{y}}
+\begin{DoxyCompactList}\small\item\em the y coordinate \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_jinks_draw_1_1_point_a40a2c347e8c84ef40c1a170ab17fec47}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} \&pt)
+\begin{DoxyCompactList}\small\item\em this allows \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} to have a stream representation \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} \mbox{\hyperlink{class_jinks_draw_1_1_point_a9337a82e2ef8fa00c685b1ea4e6beab4}{operator$\ast$}} (const \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} \&lhs, const double rhs)
+\begin{DoxyCompactList}\small\item\em The $\ast$ is to scale the coordinates of the \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} \mbox{\hyperlink{class_jinks_draw_1_1_point_a143408ed7b4a531fc9c50620a27076b7}{operator$\ast$}} (const double lhs, const \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} \&rhs)
+\begin{DoxyCompactList}\small\item\em The $\ast$ is to scale the coordinates of the \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} \mbox{\hyperlink{class_jinks_draw_1_1_point_a607e608ebadca0198af3a6d8a001ec4a}{operator+}} (const \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} \&lhs, const \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} \&rhs)
+\begin{DoxyCompactList}\small\item\em Allows adding two Points. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} \mbox{\hyperlink{class_jinks_draw_1_1_point_a35071bf200fdd94b49abf93d595b3b24}{operator-\/}} (const \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} \&lhs, const \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} \&rhs)
+\begin{DoxyCompactList}\small\item\em Allows subtracting two Points. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class models a point in 2D space with an x and a y coordinate. 
+
+operators on this class include\+:
+
+ostream, 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{cout << \mbox{\hyperlink{class_jinks_draw_1_1_point_a052cf69d98628f9ee7fd6649c401c409}{Point}}(10.0, 10.0) << endl; \textcolor{comment}{// (10.0, 10.0)}}
+\end{DoxyCode}
+
+
+scale, 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{double} d = 10.0;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\mbox{\hyperlink{class_jinks_draw_1_1_point_a052cf69d98628f9ee7fd6649c401c409}{Point}} p1 = \mbox{\hyperlink{class_jinks_draw_1_1_point_a052cf69d98628f9ee7fd6649c401c409}{Point}}(1.0, 2.0) * d;}
+\DoxyCodeLine{\mbox{\hyperlink{class_jinks_draw_1_1_point_a052cf69d98628f9ee7fd6649c401c409}{Point}} p2 = d * \mbox{\hyperlink{class_jinks_draw_1_1_point_a052cf69d98628f9ee7fd6649c401c409}{Point}}(3.0, 4.0);}
+\DoxyCodeLine{}
+\DoxyCodeLine{cout << p1 << endl; \textcolor{comment}{// (10.0, 20.0)}}
+\DoxyCodeLine{cout << p2 << endl; \textcolor{comment}{// (30.0, 40.0)}}
+\end{DoxyCode}
+
+
+add and subtract. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_jinks_draw_1_1_point_a052cf69d98628f9ee7fd6649c401c409}{Point}} p1 = \mbox{\hyperlink{class_jinks_draw_1_1_point_a052cf69d98628f9ee7fd6649c401c409}{Point}}(1.0, 2.0)}
+\DoxyCodeLine{\mbox{\hyperlink{class_jinks_draw_1_1_point_a052cf69d98628f9ee7fd6649c401c409}{Point}} p2 = \mbox{\hyperlink{class_jinks_draw_1_1_point_a052cf69d98628f9ee7fd6649c401c409}{Point}}(3.0, 4.0)}
+\DoxyCodeLine{}
+\DoxyCodeLine{\mbox{\hyperlink{class_jinks_draw_1_1_point_a052cf69d98628f9ee7fd6649c401c409}{Point}} p3 = p1 + p2;}
+\DoxyCodeLine{\mbox{\hyperlink{class_jinks_draw_1_1_point_a052cf69d98628f9ee7fd6649c401c409}{Point}} p4 = p2 - p1;}
+\DoxyCodeLine{}
+\DoxyCodeLine{cout << p3 << endl; \textcolor{comment}{// (4.0, 6.0)}}
+\DoxyCodeLine{cout << p4 << endl; \textcolor{comment}{// (2.0, 2.0)}}
+\end{DoxyCode}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_jinks_draw_1_1_point_a052cf69d98628f9ee7fd6649c401c409}\label{class_jinks_draw_1_1_point_a052cf69d98628f9ee7fd6649c401c409}} 
+\index{Jinks\+Draw\+::\+Point@{Jinks\+Draw\+::\+Point}!Point@{Point}}
+\index{Point@{Point}!Jinks\+Draw\+::\+Point@{Jinks\+Draw\+::\+Point}}
+\subsubsection{\texorpdfstring{Point()}{Point()}}
+{\footnotesize\ttfamily Jinks\+Draw\+::\+Point\+::\+Point (\begin{DoxyParamCaption}\item[{double}]{x = {\ttfamily 0.0},  }\item[{double}]{y = {\ttfamily 0.0} }\end{DoxyParamCaption})}
+
+
+
+the \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em double} & x the x coordinate \\
+\hline
+{\em double} & y the y coordinate \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_jinks_draw_1_1_point_ab7f568b7614e93baeb6a2b80ae6d4eda}\label{class_jinks_draw_1_1_point_ab7f568b7614e93baeb6a2b80ae6d4eda}} 
+\index{Jinks\+Draw\+::\+Point@{Jinks\+Draw\+::\+Point}!getX@{getX}}
+\index{getX@{getX}!Jinks\+Draw\+::\+Point@{Jinks\+Draw\+::\+Point}}
+\subsubsection{\texorpdfstring{get\+X()}{getX()}}
+{\footnotesize\ttfamily double Jinks\+Draw\+::\+Point\+::getX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+access the x coordinate 
+
+\begin{DoxyReturn}{Returns}
+the x coordinate as a double 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_jinks_draw_1_1_point_a3dcffb5d490aa4c17a6d468b944fc590}\label{class_jinks_draw_1_1_point_a3dcffb5d490aa4c17a6d468b944fc590}} 
+\index{Jinks\+Draw\+::\+Point@{Jinks\+Draw\+::\+Point}!getY@{getY}}
+\index{getY@{getY}!Jinks\+Draw\+::\+Point@{Jinks\+Draw\+::\+Point}}
+\subsubsection{\texorpdfstring{get\+Y()}{getY()}}
+{\footnotesize\ttfamily double Jinks\+Draw\+::\+Point\+::getY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+access the y coordinate 
+
+\begin{DoxyReturn}{Returns}
+the y coordinate as a double 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_jinks_draw_1_1_point_a88c728619ffd56b0a05e73aa12a749e1}\label{class_jinks_draw_1_1_point_a88c728619ffd56b0a05e73aa12a749e1}} 
+\index{Jinks\+Draw\+::\+Point@{Jinks\+Draw\+::\+Point}!setX@{setX}}
+\index{setX@{setX}!Jinks\+Draw\+::\+Point@{Jinks\+Draw\+::\+Point}}
+\subsubsection{\texorpdfstring{set\+X()}{setX()}}
+{\footnotesize\ttfamily void Jinks\+Draw\+::\+Point\+::setX (\begin{DoxyParamCaption}\item[{double}]{x }\end{DoxyParamCaption})}
+
+
+
+sets the x coordinate 
+
+
+\begin{DoxyParams}{Parameters}
+{\em double} & x the value to set the x coordinate \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_jinks_draw_1_1_point_a828cbcb4a21065420758e422265dc35f}\label{class_jinks_draw_1_1_point_a828cbcb4a21065420758e422265dc35f}} 
+\index{Jinks\+Draw\+::\+Point@{Jinks\+Draw\+::\+Point}!setY@{setY}}
+\index{setY@{setY}!Jinks\+Draw\+::\+Point@{Jinks\+Draw\+::\+Point}}
+\subsubsection{\texorpdfstring{set\+Y()}{setY()}}
+{\footnotesize\ttfamily void Jinks\+Draw\+::\+Point\+::setY (\begin{DoxyParamCaption}\item[{double}]{y }\end{DoxyParamCaption})}
+
+
+
+sets the y coordinate 
+
+
+\begin{DoxyParams}{Parameters}
+{\em double} & y the value to set the y coordinate \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_jinks_draw_1_1_point_a9337a82e2ef8fa00c685b1ea4e6beab4}\label{class_jinks_draw_1_1_point_a9337a82e2ef8fa00c685b1ea4e6beab4}} 
+\index{Jinks\+Draw\+::\+Point@{Jinks\+Draw\+::\+Point}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Jinks\+Draw\+::\+Point@{Jinks\+Draw\+::\+Point}}
+\subsubsection{\texorpdfstring{operator$\ast$}{operator*}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} operator$\ast$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} \&}]{lhs,  }\item[{const double}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+The $\ast$ is to scale the coordinates of the \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}}. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{double} d = 10.0;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\mbox{\hyperlink{class_jinks_draw_1_1_point_a052cf69d98628f9ee7fd6649c401c409}{Point}} p1 = \mbox{\hyperlink{class_jinks_draw_1_1_point_a052cf69d98628f9ee7fd6649c401c409}{Point}}(1.0, 2.0) * d;}
+\DoxyCodeLine{}
+\DoxyCodeLine{cout << p1 << endl; \textcolor{comment}{// (10.0, 20.0)}}
+\end{DoxyCode}
+ \mbox{\Hypertarget{class_jinks_draw_1_1_point_a143408ed7b4a531fc9c50620a27076b7}\label{class_jinks_draw_1_1_point_a143408ed7b4a531fc9c50620a27076b7}} 
+\index{Jinks\+Draw\+::\+Point@{Jinks\+Draw\+::\+Point}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Jinks\+Draw\+::\+Point@{Jinks\+Draw\+::\+Point}}
+\subsubsection{\texorpdfstring{operator$\ast$}{operator*}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} operator$\ast$ (\begin{DoxyParamCaption}\item[{const double}]{lhs,  }\item[{const \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+The $\ast$ is to scale the coordinates of the \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}}. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{double} d = 10.0;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\mbox{\hyperlink{class_jinks_draw_1_1_point_a052cf69d98628f9ee7fd6649c401c409}{Point}} p2 = d * \mbox{\hyperlink{class_jinks_draw_1_1_point_a052cf69d98628f9ee7fd6649c401c409}{Point}}(3.0, 4.0);}
+\DoxyCodeLine{}
+\DoxyCodeLine{cout << p2 << endl; \textcolor{comment}{// (30.0, 40.0)}}
+\end{DoxyCode}
+ \mbox{\Hypertarget{class_jinks_draw_1_1_point_a607e608ebadca0198af3a6d8a001ec4a}\label{class_jinks_draw_1_1_point_a607e608ebadca0198af3a6d8a001ec4a}} 
+\index{Jinks\+Draw\+::\+Point@{Jinks\+Draw\+::\+Point}!operator+@{operator+}}
+\index{operator+@{operator+}!Jinks\+Draw\+::\+Point@{Jinks\+Draw\+::\+Point}}
+\subsubsection{\texorpdfstring{operator+}{operator+}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} \&}]{lhs,  }\item[{const \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Allows adding two Points. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_jinks_draw_1_1_point_a052cf69d98628f9ee7fd6649c401c409}{Point}} p1 = \mbox{\hyperlink{class_jinks_draw_1_1_point_a052cf69d98628f9ee7fd6649c401c409}{Point}}(1.0, 2.0)}
+\DoxyCodeLine{\mbox{\hyperlink{class_jinks_draw_1_1_point_a052cf69d98628f9ee7fd6649c401c409}{Point}} p2 = \mbox{\hyperlink{class_jinks_draw_1_1_point_a052cf69d98628f9ee7fd6649c401c409}{Point}}(3.0, 4.0)}
+\DoxyCodeLine{}
+\DoxyCodeLine{\mbox{\hyperlink{class_jinks_draw_1_1_point_a052cf69d98628f9ee7fd6649c401c409}{Point}} p3 = p1 + p2;}
+\DoxyCodeLine{}
+\DoxyCodeLine{cout << p3 << endl; \textcolor{comment}{// (4.0, 6.0)}}
+\end{DoxyCode}
+ \mbox{\Hypertarget{class_jinks_draw_1_1_point_a35071bf200fdd94b49abf93d595b3b24}\label{class_jinks_draw_1_1_point_a35071bf200fdd94b49abf93d595b3b24}} 
+\index{Jinks\+Draw\+::\+Point@{Jinks\+Draw\+::\+Point}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Jinks\+Draw\+::\+Point@{Jinks\+Draw\+::\+Point}}
+\subsubsection{\texorpdfstring{operator-\/}{operator-}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} operator-\/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} \&}]{lhs,  }\item[{const \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Allows subtracting two Points. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_jinks_draw_1_1_point_a052cf69d98628f9ee7fd6649c401c409}{Point}} p1 = \mbox{\hyperlink{class_jinks_draw_1_1_point_a052cf69d98628f9ee7fd6649c401c409}{Point}}(1.0, 2.0)}
+\DoxyCodeLine{\mbox{\hyperlink{class_jinks_draw_1_1_point_a052cf69d98628f9ee7fd6649c401c409}{Point}} p2 = \mbox{\hyperlink{class_jinks_draw_1_1_point_a052cf69d98628f9ee7fd6649c401c409}{Point}}(3.0, 4.0)}
+\DoxyCodeLine{}
+\DoxyCodeLine{\mbox{\hyperlink{class_jinks_draw_1_1_point_a052cf69d98628f9ee7fd6649c401c409}{Point}} p4 = p2 - p1;}
+\DoxyCodeLine{}
+\DoxyCodeLine{cout << p4 << endl; \textcolor{comment}{// (2.0, 2.0)}}
+\end{DoxyCode}
+ \mbox{\Hypertarget{class_jinks_draw_1_1_point_a40a2c347e8c84ef40c1a170ab17fec47}\label{class_jinks_draw_1_1_point_a40a2c347e8c84ef40c1a170ab17fec47}} 
+\index{Jinks\+Draw\+::\+Point@{Jinks\+Draw\+::\+Point}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Jinks\+Draw\+::\+Point@{Jinks\+Draw\+::\+Point}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} \&}]{pt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+this allows \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} to have a stream representation 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{cout << \mbox{\hyperlink{class_jinks_draw_1_1_point_a052cf69d98628f9ee7fd6649c401c409}{Point}}(10.0, 10.0) << endl; \textcolor{comment}{// (10.0, 10.0)}}
+\end{DoxyCode}
+ 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_jinks_draw_1_1_point_a49a46c3d78c0c68260d55dacdee458de}\label{class_jinks_draw_1_1_point_a49a46c3d78c0c68260d55dacdee458de}} 
+\index{Jinks\+Draw\+::\+Point@{Jinks\+Draw\+::\+Point}!x@{x}}
+\index{x@{x}!Jinks\+Draw\+::\+Point@{Jinks\+Draw\+::\+Point}}
+\subsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily double Jinks\+Draw\+::\+Point\+::x\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+the x coordinate 
+
+\mbox{\Hypertarget{class_jinks_draw_1_1_point_ad2dbfbd07baf41cfe82737a4f347bab5}\label{class_jinks_draw_1_1_point_ad2dbfbd07baf41cfe82737a4f347bab5}} 
+\index{Jinks\+Draw\+::\+Point@{Jinks\+Draw\+::\+Point}!y@{y}}
+\index{y@{y}!Jinks\+Draw\+::\+Point@{Jinks\+Draw\+::\+Point}}
+\subsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily double Jinks\+Draw\+::\+Point\+::y\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+the y coordinate 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/kenjinks/\+Documents/\+Jinks\+Draw/\mbox{\hyperlink{primitives_8h}{primitives.\+h}}\end{DoxyCompactItemize}

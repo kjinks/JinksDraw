@@ -33,6 +33,35 @@ namespace JinksDraw
   /*!
     \class Point : public Primitive
     \brief This class models a point in 2D space with an x and a y coordinate
+    \brief operators on this class include:
+
+    \brief ostream,
+    \code{.cpp}
+    cout << Point(10.0, 10.0) << endl; // (10.0, 10.0)
+    \endcode
+
+    \brief scale,
+    \code{.cpp}
+    double d = 10.0;
+
+    Point p1 = Point(1.0, 2.0) * d;
+    Point p2 = d * Point(3.0, 4.0);
+
+    cout << p1 << endl; // (10.0, 20.0)
+    cout << p2 << endl; // (30.0, 40.0)
+    \endcode
+
+    \brief add and subtract.
+    \code{.cpp}
+    Point p1 = Point(1.0, 2.0)
+    Point p2 = Point(3.0, 4.0)
+
+    Point p3 = p1 + p2;
+    Point p4 = p2 - p1;
+
+    cout << p3 << endl; // (4.0, 6.0)
+    cout << p4 << endl; // (2.0, 2.0)
+    \endcode
   */
   class Point : public Primitive
   {
@@ -83,12 +112,67 @@ namespace JinksDraw
     void setX(double x);
     void setY(double y);
 
+    /*!
+    \fn friend std::ostream& operator<<(std::ostream& os, const Point& pt)
+    \brief this allows Point to have a stream representation
+    \code{.cpp}
+    cout << Point(10.0, 10.0) << endl; // (10.0, 10.0)
+    \endcode
+    */
     friend std::ostream& operator<<(std::ostream& os, const Point& pt);
 
+    /*!
+    \fn friend Point operator*(const Point& lhs, const double rhs)
+    \brief The * is to scale the coordinates of the Point
+    \code{.cpp}
+    double d = 10.0;
+
+    Point p1 = Point(1.0, 2.0) * d;
+
+    cout << p1 << endl; // (10.0, 20.0)
+    \endcode
+    */
     friend Point operator*(const Point& lhs, const double rhs);
+
+    /*!
+    \fn friend Point operator*(const double lhs, const Point& rhs)
+    \brief The * is to scale the coordinates of the Point
+    \code{.cpp}
+    double d = 10.0;
+
+    Point p2 = d * Point(3.0, 4.0);
+
+    cout << p2 << endl; // (30.0, 40.0)
+    \endcode
+    */
     friend Point operator*(const double lhs, const Point& rhs);
 
+    /*!
+    \fn friend Point operator+(const Point& lhs, const Point& rhs)
+    \brief Allows adding two Points
+    \code{.cpp}
+    Point p1 = Point(1.0, 2.0)
+    Point p2 = Point(3.0, 4.0)
+
+    Point p3 = p1 + p2;
+
+    cout << p3 << endl; // (4.0, 6.0)
+    \endcode
+    */
     friend Point operator+(const Point& lhs, const Point& rhs);
+
+    /*!
+    \fn friend Point operator-(const Point& lhs, const Point& rhs)
+    \brief Allows subtracting two Points
+    \code{.cpp}
+    Point p1 = Point(1.0, 2.0)
+    Point p2 = Point(3.0, 4.0)
+
+    Point p4 = p2 - p1;
+
+    cout << p4 << endl; // (2.0, 2.0)
+    \endcode
+    */
     friend Point operator-(const Point& lhs, const Point& rhs);
   };
 

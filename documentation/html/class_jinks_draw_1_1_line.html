@@ -69,6 +69,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_jinks_draw_1_1_line-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">JinksDraw::Line Class Reference</div>  </div>
@@ -82,17 +83,12 @@ $(function() {
 <div class="dynheader">
 Inheritance diagram for JinksDraw::Line:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_jinks_draw_1_1_line__inherit__graph.png" border="0" usemap="#_jinks_draw_1_1_line_inherit__map" alt="Inheritance graph"/></div>
-<map name="_jinks_draw_1_1_line_inherit__map" id="_jinks_draw_1_1_line_inherit__map">
+ <div class="center">
+  <img src="class_jinks_draw_1_1_line.png" usemap="#JinksDraw::Line_map" alt=""/>
+  <map id="JinksDraw::Line_map" name="JinksDraw::Line_map">
+<area href="class_jinks_draw_1_1_primitive.html" title="Empty class that all primitives inherit from. Useful for making lists." alt="JinksDraw::Primitive" shape="rect" coords="0,0,125,24"/>
 </map>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<div class="dynheader">
-Collaboration diagram for JinksDraw::Line:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_jinks_draw_1_1_line__coll__graph.png" border="0" usemap="#_jinks_draw_1_1_line_coll__map" alt="Collaboration graph"/></div>
-<map name="_jinks_draw_1_1_line_coll__map" id="_jinks_draw_1_1_line_coll__map">
-</map>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -132,6 +128,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae344d8ad62e6044cfa2a5d31e1262d00"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_jinks_draw_1_1_line.html#ae344d8ad62e6044cfa2a5d31e1262d00">getAngle</a> ()</td></tr>
 <tr class="memdesc:ae344d8ad62e6044cfa2a5d31e1262d00"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculates and returns the angle of the line in radians  <a href="#ae344d8ad62e6044cfa2a5d31e1262d00">More...</a><br /></td></tr>
 <tr class="separator:ae344d8ad62e6044cfa2a5d31e1262d00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a697fccb64f32b900f86dbc89ac69fec3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_jinks_draw_1_1_point.html">Point</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_jinks_draw_1_1_line.html#a697fccb64f32b900f86dbc89ac69fec3">start</a> = new <a class="el" href="class_jinks_draw_1_1_point.html">Point</a>()</td></tr>
+<tr class="separator:a697fccb64f32b900f86dbc89ac69fec3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c04e4d06b7c8bafff608b1ffae6169b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_jinks_draw_1_1_point.html">Point</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_jinks_draw_1_1_line.html#a6c04e4d06b7c8bafff608b1ffae6169b">end</a> = new <a class="el" href="class_jinks_draw_1_1_point.html">Point</a>()</td></tr>
+<tr class="separator:a6c04e4d06b7c8bafff608b1ffae6169b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p class="">This class models a 2D line with a deque of points. </p>
@@ -412,6 +415,51 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a vector of <a class="el" href="class_jinks_draw_1_1_point.html" title="This class models a point in 2D space with an x and a y coordinate.">Point</a> objects </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a6c04e4d06b7c8bafff608b1ffae6169b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c04e4d06b7c8bafff608b1ffae6169b">&#9670;&nbsp;</a></span>end</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_jinks_draw_1_1_point.html">Point</a>* JinksDraw::Line::end = new <a class="el" href="class_jinks_draw_1_1_point.html">Point</a>()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a697fccb64f32b900f86dbc89ac69fec3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a697fccb64f32b900f86dbc89ac69fec3">&#9670;&nbsp;</a></span>start</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_jinks_draw_1_1_point.html">Point</a>* JinksDraw::Line::start = new <a class="el" href="class_jinks_draw_1_1_point.html">Point</a>()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

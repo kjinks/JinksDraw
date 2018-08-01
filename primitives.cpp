@@ -59,6 +59,7 @@ namespace JinksDraw
 
     	return true; //All OK
     }
+
     /**************************************************************************
     Class Point
     **************************************************************************/
@@ -209,6 +210,7 @@ namespace JinksDraw
 
       for (int i = 0; i <= divisions; i++)
       {
+        //lerp
         double delta = stepSize * i;
         Point a = *(this->start) * (1.0 - delta);
         Point b = *(this->end) * (delta);

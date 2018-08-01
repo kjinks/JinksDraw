@@ -1,0 +1,248 @@
+\hypertarget{class_jinks_draw_1_1_line}{}\section{Jinks\+Draw\+:\+:Line Class Reference}
+\label{class_jinks_draw_1_1_line}\index{Jinks\+Draw\+::\+Line@{Jinks\+Draw\+::\+Line}}
+
+
+This class models a 2D line with a deque of points.  
+
+
+
+
+{\ttfamily \#include $<$primitives.\+h$>$}
+
+Inheritance diagram for Jinks\+Draw\+:\+:Line\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_jinks_draw_1_1_line}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_jinks_draw_1_1_line_a0a01ff362d3d5cb6de257cdc59fdbd7a}{Line}} (\mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} \&new\+Start, \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} \&new\+End)
+\begin{DoxyCompactList}\small\item\em the constructor for a 2D line \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_jinks_draw_1_1_line_a95823711fb1ebc27435aff387c42b577}{reset}} ()
+\begin{DoxyCompactList}\small\item\em this method resets the class attributes to their default state \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} \& \mbox{\hyperlink{class_jinks_draw_1_1_line_a0457130d0cee09aa589c387cd7ed4b59}{get\+Start}} ()
+\begin{DoxyCompactList}\small\item\em returns a pointer to the start \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} \& \mbox{\hyperlink{class_jinks_draw_1_1_line_a6d0c3c1b398bbe5dcadecaff9e71720b}{get\+End}} ()
+\begin{DoxyCompactList}\small\item\em returns a pointer to the end \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_jinks_draw_1_1_line_a5afb8d3fa0f0b47529014dbfb5e9dbb6}{set\+Start}} (\mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} \&new\+Start)
+\begin{DoxyCompactList}\small\item\em sets the start to a new \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_jinks_draw_1_1_line_affea1d620e660a388d30808ac9404457}{set\+End}} (\mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} \&new\+End)
+\begin{DoxyCompactList}\small\item\em sets the end to a new \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_jinks_draw_1_1_line_aea73a9418815e5d255044a6dbce37e3e}{calc\+Slope}} ()
+\begin{DoxyCompactList}\small\item\em calculates the slope of the line \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} $>$ \mbox{\hyperlink{class_jinks_draw_1_1_line_a159d4850578aff530064d53c7461fa03}{intersection}} (\mbox{\hyperlink{class_jinks_draw_1_1_line}{Line}} \&intersecting\+Line)
+\begin{DoxyCompactList}\small\item\em returns the intersection of this line and another line if any \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} $>$ \mbox{\hyperlink{class_jinks_draw_1_1_line_a43d8f7b708f5e9851a188c755aa0d963}{subpoint}} (int divisions=2)
+\begin{DoxyCompactList}\small\item\em returns a vector of points that subdivide the line, \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_jinks_draw_1_1_line}{Line}} $>$ \mbox{\hyperlink{class_jinks_draw_1_1_line_a79047036e61d10ef3b14c660c32e6d64}{subline}} (int divisions=2)
+\begin{DoxyCompactList}\small\item\em returns a vector of lines that subdivide the line \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_jinks_draw_1_1_line_aeb77107e932c68b88be7e32344db1de4}{get\+Length}} ()
+\begin{DoxyCompactList}\small\item\em calculates and returns the length of the line \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_jinks_draw_1_1_line_ae344d8ad62e6044cfa2a5d31e1262d00}{get\+Angle}} ()
+\begin{DoxyCompactList}\small\item\em calculates and returns the angle of the line in radians \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} $\ast$ \mbox{\hyperlink{class_jinks_draw_1_1_line_a697fccb64f32b900f86dbc89ac69fec3}{start}} = new \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}}()
+\item 
+\mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} $\ast$ \mbox{\hyperlink{class_jinks_draw_1_1_line_a6c04e4d06b7c8bafff608b1ffae6169b}{end}} = new \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}}()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class models a 2D line with a deque of points. 
+
+Methods include Intersection, Subpoint, Length, Angle... more methods may be created in the future 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_jinks_draw_1_1_line_a0a01ff362d3d5cb6de257cdc59fdbd7a}\label{class_jinks_draw_1_1_line_a0a01ff362d3d5cb6de257cdc59fdbd7a}} 
+\index{Jinks\+Draw\+::\+Line@{Jinks\+Draw\+::\+Line}!Line@{Line}}
+\index{Line@{Line}!Jinks\+Draw\+::\+Line@{Jinks\+Draw\+::\+Line}}
+\subsubsection{\texorpdfstring{Line()}{Line()}}
+{\footnotesize\ttfamily Jinks\+Draw\+::\+Line\+::\+Line (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} \&}]{new\+Start,  }\item[{\mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} \&}]{new\+End }\end{DoxyParamCaption})}
+
+
+
+the constructor for a 2D line 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}}\& start a reference to a start \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} \\
+\hline
+{\em const} & \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}}\& end a reference to an end \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_jinks_draw_1_1_line_aea73a9418815e5d255044a6dbce37e3e}\label{class_jinks_draw_1_1_line_aea73a9418815e5d255044a6dbce37e3e}} 
+\index{Jinks\+Draw\+::\+Line@{Jinks\+Draw\+::\+Line}!calc\+Slope@{calc\+Slope}}
+\index{calc\+Slope@{calc\+Slope}!Jinks\+Draw\+::\+Line@{Jinks\+Draw\+::\+Line}}
+\subsubsection{\texorpdfstring{calc\+Slope()}{calcSlope()}}
+{\footnotesize\ttfamily double Jinks\+Draw\+::\+Line\+::calc\+Slope (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+calculates the slope of the line 
+
+\begin{DoxyReturn}{Returns}
+a slope as a double 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_jinks_draw_1_1_line_ae344d8ad62e6044cfa2a5d31e1262d00}\label{class_jinks_draw_1_1_line_ae344d8ad62e6044cfa2a5d31e1262d00}} 
+\index{Jinks\+Draw\+::\+Line@{Jinks\+Draw\+::\+Line}!get\+Angle@{get\+Angle}}
+\index{get\+Angle@{get\+Angle}!Jinks\+Draw\+::\+Line@{Jinks\+Draw\+::\+Line}}
+\subsubsection{\texorpdfstring{get\+Angle()}{getAngle()}}
+{\footnotesize\ttfamily double Jinks\+Draw\+::\+Line\+::get\+Angle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+calculates and returns the angle of the line in radians 
+
+\begin{DoxyReturn}{Returns}
+the angle in radians 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_jinks_draw_1_1_line_a6d0c3c1b398bbe5dcadecaff9e71720b}\label{class_jinks_draw_1_1_line_a6d0c3c1b398bbe5dcadecaff9e71720b}} 
+\index{Jinks\+Draw\+::\+Line@{Jinks\+Draw\+::\+Line}!get\+End@{get\+End}}
+\index{get\+End@{get\+End}!Jinks\+Draw\+::\+Line@{Jinks\+Draw\+::\+Line}}
+\subsubsection{\texorpdfstring{get\+End()}{getEnd()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} $\ast$ Jinks\+Draw\+::\+Line\+::get\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+returns a pointer to the end \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} 
+
+\begin{DoxyReturn}{Returns}
+a pointer to a \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_jinks_draw_1_1_line_aeb77107e932c68b88be7e32344db1de4}\label{class_jinks_draw_1_1_line_aeb77107e932c68b88be7e32344db1de4}} 
+\index{Jinks\+Draw\+::\+Line@{Jinks\+Draw\+::\+Line}!get\+Length@{get\+Length}}
+\index{get\+Length@{get\+Length}!Jinks\+Draw\+::\+Line@{Jinks\+Draw\+::\+Line}}
+\subsubsection{\texorpdfstring{get\+Length()}{getLength()}}
+{\footnotesize\ttfamily double Jinks\+Draw\+::\+Line\+::get\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+calculates and returns the length of the line 
+
+\begin{DoxyReturn}{Returns}
+the length as a double 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_jinks_draw_1_1_line_a0457130d0cee09aa589c387cd7ed4b59}\label{class_jinks_draw_1_1_line_a0457130d0cee09aa589c387cd7ed4b59}} 
+\index{Jinks\+Draw\+::\+Line@{Jinks\+Draw\+::\+Line}!get\+Start@{get\+Start}}
+\index{get\+Start@{get\+Start}!Jinks\+Draw\+::\+Line@{Jinks\+Draw\+::\+Line}}
+\subsubsection{\texorpdfstring{get\+Start()}{getStart()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} $\ast$ Jinks\+Draw\+::\+Line\+::get\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+returns a pointer to the start \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} 
+
+\begin{DoxyReturn}{Returns}
+a pointer to a \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_jinks_draw_1_1_line_a159d4850578aff530064d53c7461fa03}\label{class_jinks_draw_1_1_line_a159d4850578aff530064d53c7461fa03}} 
+\index{Jinks\+Draw\+::\+Line@{Jinks\+Draw\+::\+Line}!intersection@{intersection}}
+\index{intersection@{intersection}!Jinks\+Draw\+::\+Line@{Jinks\+Draw\+::\+Line}}
+\subsubsection{\texorpdfstring{intersection()}{intersection()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} $>$ Jinks\+Draw\+::\+Line\+::intersection (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_jinks_draw_1_1_line}{Line}} \&}]{intersecting\+Line }\end{DoxyParamCaption})}
+
+
+
+returns the intersection of this line and another line if any 
+
+future plans to turn this into a template that will accept any primitive 
+\begin{DoxyParams}{Parameters}
+{\em Line$\ast$} & intersecting\+Line the line intersecting this line \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a vector of \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} objects 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_jinks_draw_1_1_line_a95823711fb1ebc27435aff387c42b577}\label{class_jinks_draw_1_1_line_a95823711fb1ebc27435aff387c42b577}} 
+\index{Jinks\+Draw\+::\+Line@{Jinks\+Draw\+::\+Line}!reset@{reset}}
+\index{reset@{reset}!Jinks\+Draw\+::\+Line@{Jinks\+Draw\+::\+Line}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Jinks\+Draw\+::\+Line\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+this method resets the class attributes to their default state 
+
+\mbox{\Hypertarget{class_jinks_draw_1_1_line_affea1d620e660a388d30808ac9404457}\label{class_jinks_draw_1_1_line_affea1d620e660a388d30808ac9404457}} 
+\index{Jinks\+Draw\+::\+Line@{Jinks\+Draw\+::\+Line}!set\+End@{set\+End}}
+\index{set\+End@{set\+End}!Jinks\+Draw\+::\+Line@{Jinks\+Draw\+::\+Line}}
+\subsubsection{\texorpdfstring{set\+End()}{setEnd()}}
+{\footnotesize\ttfamily void Jinks\+Draw\+::\+Line\+::set\+End (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} \&}]{new\+End }\end{DoxyParamCaption})}
+
+
+
+sets the end to a new \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} 
+
+\mbox{\Hypertarget{class_jinks_draw_1_1_line_a5afb8d3fa0f0b47529014dbfb5e9dbb6}\label{class_jinks_draw_1_1_line_a5afb8d3fa0f0b47529014dbfb5e9dbb6}} 
+\index{Jinks\+Draw\+::\+Line@{Jinks\+Draw\+::\+Line}!set\+Start@{set\+Start}}
+\index{set\+Start@{set\+Start}!Jinks\+Draw\+::\+Line@{Jinks\+Draw\+::\+Line}}
+\subsubsection{\texorpdfstring{set\+Start()}{setStart()}}
+{\footnotesize\ttfamily void Jinks\+Draw\+::\+Line\+::set\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} \&}]{new\+Start }\end{DoxyParamCaption})}
+
+
+
+sets the start to a new \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} 
+
+\mbox{\Hypertarget{class_jinks_draw_1_1_line_a79047036e61d10ef3b14c660c32e6d64}\label{class_jinks_draw_1_1_line_a79047036e61d10ef3b14c660c32e6d64}} 
+\index{Jinks\+Draw\+::\+Line@{Jinks\+Draw\+::\+Line}!subline@{subline}}
+\index{subline@{subline}!Jinks\+Draw\+::\+Line@{Jinks\+Draw\+::\+Line}}
+\subsubsection{\texorpdfstring{subline()}{subline()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_jinks_draw_1_1_line}{Line}} $>$ Jinks\+Draw\+::\+Line\+::subline (\begin{DoxyParamCaption}\item[{int}]{divisions = {\ttfamily 2} }\end{DoxyParamCaption})}
+
+
+
+returns a vector of lines that subdivide the line 
+
+the default of 2 gives 2 equal halves 
+\begin{DoxyParams}{Parameters}
+{\em int} & divisions = 2 the number of divisions of the line \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a vector of \mbox{\hyperlink{class_jinks_draw_1_1_line}{Line}} objects 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_jinks_draw_1_1_line_a43d8f7b708f5e9851a188c755aa0d963}\label{class_jinks_draw_1_1_line_a43d8f7b708f5e9851a188c755aa0d963}} 
+\index{Jinks\+Draw\+::\+Line@{Jinks\+Draw\+::\+Line}!subpoint@{subpoint}}
+\index{subpoint@{subpoint}!Jinks\+Draw\+::\+Line@{Jinks\+Draw\+::\+Line}}
+\subsubsection{\texorpdfstring{subpoint()}{subpoint()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} $>$ Jinks\+Draw\+::\+Line\+::subpoint (\begin{DoxyParamCaption}\item[{int}]{divisions = {\ttfamily 2} }\end{DoxyParamCaption})}
+
+
+
+returns a vector of points that subdivide the line, 
+
+the default of 2 gives the midpoint 
+\begin{DoxyParams}{Parameters}
+{\em int} & divisions = 2 the number of divisions of the line \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a vector of \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} objects 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_jinks_draw_1_1_line_a6c04e4d06b7c8bafff608b1ffae6169b}\label{class_jinks_draw_1_1_line_a6c04e4d06b7c8bafff608b1ffae6169b}} 
+\index{Jinks\+Draw\+::\+Line@{Jinks\+Draw\+::\+Line}!end@{end}}
+\index{end@{end}!Jinks\+Draw\+::\+Line@{Jinks\+Draw\+::\+Line}}
+\subsubsection{\texorpdfstring{end}{end}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}}$\ast$ Jinks\+Draw\+::\+Line\+::end = new \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}}()\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_jinks_draw_1_1_line_a697fccb64f32b900f86dbc89ac69fec3}\label{class_jinks_draw_1_1_line_a697fccb64f32b900f86dbc89ac69fec3}} 
+\index{Jinks\+Draw\+::\+Line@{Jinks\+Draw\+::\+Line}!start@{start}}
+\index{start@{start}!Jinks\+Draw\+::\+Line@{Jinks\+Draw\+::\+Line}}
+\subsubsection{\texorpdfstring{start}{start}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}}$\ast$ Jinks\+Draw\+::\+Line\+::start = new \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}}()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/kenjinks/\+Documents/\+Jinks\+Draw/\mbox{\hyperlink{primitives_8h}{primitives.\+h}}\end{DoxyCompactItemize}
