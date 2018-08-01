@@ -6,6 +6,7 @@
 brought together to build more complex geometries.
 */
 #include "primitives.h"
+#include "jinks_math.h"
 #include <math.h>
 #include <iostream>
 
@@ -83,6 +84,12 @@ namespace JinksDraw
     void Point::setY(double y)
     {
       this->y = y;
+    }
+
+    std::ostream& operator<<(std::ostream& os, const Point& pt)
+    {
+      os << "(" << pt.x << "," << pt.y << ")";
+      return os;
     }
 
     /**************************************************************************

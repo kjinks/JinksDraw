@@ -10,13 +10,13 @@ bool testClassPoint()
   double testY = 3.0;
 
   //test constructor
-  Point* p = new Point(testX, testY);
+  Point p = Point(testX, testY);
   std::cout << "Point class instantiated successfully" << '\n';
-
+  std::cout << "Created point " << p << '\n';
   //test accessors
 
 
-  if (p->getX() == testX)
+  if (p.getX() == testX)
   {
     std::cout << "Point class x access passed" << '\n';
   }
@@ -26,7 +26,7 @@ bool testClassPoint()
     std::cout << "Point class x access failed" << '\n';
   };
 
-  if (p->getY() == testY)
+  if (p.getY() == testY)
   {
     std::cout << "Point class y access passed" << '\n';
   }
@@ -40,8 +40,8 @@ bool testClassPoint()
   double newTestX = 4.0;
   double newTestY = 6.0;
 
-  p->setX(newTestX);
-  if (p->getX() == newTestX)
+  p.setX(newTestX);
+  if (p.getX() == newTestX)
   {
     std::cout << "Point class x mutator passed" << '\n';
   }
@@ -51,8 +51,8 @@ bool testClassPoint()
     std::cout << "Point class x mutator failed" << '\n';
   };
 
-  p->setY(newTestY);
-  if (p->getY() == newTestY)
+  p.setY(newTestY);
+  if (p.getY() == newTestY)
   {
     std::cout << "Point class y mutator passed" << '\n';
   }
@@ -61,10 +61,6 @@ bool testClassPoint()
     result = false;
     std::cout << "Point class y mutator failed" << '\n';
   };
-
-  //test destructor
-  delete p;
-  std::cout << "Point class destroyed successfully" << '\n';
 
   return result;
 }
@@ -150,6 +146,11 @@ bool testClassLine()
   std::vector<Point> points = l.intersection(l2);
 
   std::cout << "Line class intersection created " << points.size() << " point(s)" << '\n';
+
+  for (auto point = points.begin(); point != points.end(); ++point)
+  {
+    std::cout << "Point found " << *point << '\n';
+  }
 
   return result;
 }

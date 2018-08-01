@@ -13,6 +13,7 @@
 #include <string>
 #include <vector>
 
+
 namespace JinksDraw
 {
 
@@ -80,8 +81,10 @@ namespace JinksDraw
     void setX(double x);
     void setY(double y);
 
-    // std::ostream& operator<<(ostream& os, const Point& p);
+    friend std::ostream& operator<<(std::ostream& os, const Point& pt);
+
   };
+
 
   /*!
   \class Line : public Primitive
@@ -142,7 +145,7 @@ namespace JinksDraw
     double calcSlope();
 
     /*!
-    \fn std::vector<Point> intersection(Line* intersectingLine, double tolerance = 0.001)
+    \fn std::vector<Point> intersection(Line& intersectingLine)
     \brief returns the intersection of this line and another line if any
     \brief future plans to turn this into a template that will accept any primitive
     \param Line* intersectingLine
@@ -157,7 +160,7 @@ namespace JinksDraw
     \brief the default of 2 gives the midpoint
     \param int divisions = 2
     \brief the number of divisions of the line
-    \return a vector of pointers to Point objects
+    \return a vector of Point objects
     */
     std::vector<Point> subpoint(int divisions = 2);
 
@@ -167,7 +170,7 @@ namespace JinksDraw
     \brief the default of 2 gives 2 equal halves
     \param int divisions = 2
     \brief the number of divisions of the line
-    \return a vector of pointers to Line objects
+    \return a vector of Line objects
     */
     std::vector<Line> subline(int divisions = 2);
 
