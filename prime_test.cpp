@@ -152,6 +152,15 @@ bool testClassLine()
     std::cout << "Point found " << *point << '\n';
   }
 
+  points = l.subpoint(4);
+
+  std::cout << "Line class subpoint created " << points.size() << " point(s)" << '\n';
+
+  for (auto point = points.begin(); point != points.end(); ++point)
+  {
+    std::cout << "Point found " << *point << '\n';
+  }
+
   return result;
 }
 

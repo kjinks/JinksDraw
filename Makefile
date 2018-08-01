@@ -16,7 +16,7 @@ main.o: main.cpp
 	$(CC) $(CFLAGS) main.cpp
 
 primitives.o: primitives.cpp primitives.h
-	$(CC) $(CFLAGS) primitives.cpp
+	$(CC) $(CFLAGS) primitives.cpp jinks_math.cpp
 
 prime_test: prime_test.o primitives.o jinks_math.o
 	$(CC) prime_test.o primitives.o jinks_math.o -o prime_test

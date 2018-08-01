@@ -6,9 +6,11 @@
 brought together to build more complex geometries.
 */
 #include "primitives.h"
-#include "jinks_math.h"
+
 #include <math.h>
 #include <iostream>
+
+
 
 #define _DEBUG_
 
@@ -90,6 +92,24 @@ namespace JinksDraw
     {
       os << "(" << pt.x << "," << pt.y << ")";
       return os;
+    }
+
+    Point operator*(Point& lhs, double rhs)
+    {
+      return Point(lhs.getX() * rhs, lhs.getY() * rhs);
+    }
+    Point operator*(double lhs, Point& rhs)
+    {
+      return rhs * lhs;
+    }
+
+    Point operator+(Point& lhs, Point& rhs)
+    {
+      return Point(lhs.getX() + rhs.getX(), lhs.getY() + rhs.getY());
+    }
+    Point operator-(Point& lhs, Point& rhs)
+    {
+      return Point(lhs.getX() - rhs.getX(), lhs.getY() - rhs.getY());
     }
 
     /**************************************************************************
@@ -181,4 +201,21 @@ namespace JinksDraw
       return result;
     }
 
+    std::vector<Point> Line::subpoint(int divisions)
+    {
+      std::vector<Point> result;
+
+      double stepSize = 1.0 / divisions;
+
+      for (int i = 0; i <= divisions; i++)
+      {
+        double delta = stepSize * i;
+        Point a = *(this->start) * (1.0 - delta);
+        Point b = *(this->end) * (delta);
+        Point c = a + b;
+        result.push_back(c);
+      }
+
+      return result;
+    }
 }

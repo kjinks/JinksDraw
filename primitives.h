@@ -9,10 +9,12 @@
 #ifndef _PRIMITIVES_H_
 #define _PRIMITIVES_H_
 
+#include "jinks_math.h"
 #include <iostream>
 #include <string>
 #include <vector>
 
+using namespace JinksMath;
 
 namespace JinksDraw
 {
@@ -83,6 +85,11 @@ namespace JinksDraw
 
     friend std::ostream& operator<<(std::ostream& os, const Point& pt);
 
+    friend Point operator*(const Point& lhs, const double rhs);
+    friend Point operator*(const double lhs, const Point& rhs);
+
+    friend Point operator+(const Point& lhs, const Point& rhs);
+    friend Point operator-(const Point& lhs, const Point& rhs);
   };
 
 

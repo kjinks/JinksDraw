@@ -13,9 +13,9 @@
 namespace JinksMath
 {
   template <class T>
-  T lerp (T value1, T value2, double d)
+  T lerp (const T& value1, const T& value2, double d)
   {
-    return (value1 * T(1.0 - d)) + (value2 * T(d));
+    return (value1 * (1.0 - d)) + (value2 * (d));
   }
 }
 
