@@ -7,6 +7,7 @@ CC = g++
 CFLAGS = -c -Wall `pkg-config --cflags --libs gtk+-3.0`
 
 all: jinksDraw
+	
 
 jinksDraw: main.o primitives.o
 	$(CC) main.o primitives.o -o jinksDraw

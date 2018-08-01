@@ -9,10 +9,14 @@
 #ifndef _PRIMITIVES_H_
 #define _PRIMITIVES_H_
 
-#include <list>
+#include <iostream>
+#include <string>
+#include <vector>
 
 namespace JinksDraw
 {
+
+
   /*!
     \class Primitive
     \brief Empty class that all primitives inherit from. Useful for making lists.
@@ -22,6 +26,7 @@ namespace JinksDraw
     //empty class
   };
 
+  const Primitive PRIME_NULL = Primitive();
   /*!
     \class Point : public Primitive
     \brief This class models a point in 2D space with an x and a y coordinate
@@ -47,13 +52,16 @@ namespace JinksDraw
     \param double y
     \brief the y coordinate
     */
-    Point(double x, double y);
+    Point(double x = 0.0, double y = 0.0);
 
     /*!
     \fn double getX()
     \brief access the x coordinate
+    \return the x coordinate as a double
+
     \fn double getY()
     \brief access the y coordinate
+    \return the y coordinate as a double
     */
     double getX();
     double getY();
@@ -63,6 +71,7 @@ namespace JinksDraw
     \brief sets the x coordinate
     \param double x
     \brief the value to set the x coordinate
+
     \fn void setY(double y)
     \brief sets the y coordinate
     \param double y
@@ -70,89 +79,109 @@ namespace JinksDraw
     */
     void setX(double x);
     void setY(double y);
+
+    // std::ostream& operator<<(ostream& os, const Point& p);
   };
 
   /*!
   \class Line : public Primitive
-  \brief This class models a 2D line with starting and ending points.
+  \brief This class models a 2D line with a deque of points.
   \brief Methods include Intersection, Subpoint, Length, Angle...
   \brief more methods may be created in the future
   */
   class Line : public Primitive
   {
   private:
-    /*!
-    \var Point* start
-    \brief a pointer to the start Point
-    \var Point* end
-    \brief a point to the end Point
-    */
-    Point* start;
-    Point* end;
-    
+    Point* start = new Point();
+    Point* end = new Point();
+
   public:
     /*!
-    \fn Line(const Point& start, const Point& end)
+    \fn Line(Point* start, Point* end)
     \brief the constructor for a 2D line
     \param const Point& start
     \brief a reference to a start Point
     \param const Point& end
     \brief a reference to an end Point
     */
-    Line(const Point& start, const Point& end);
+    Line(Point& newStart, Point& newEnd);
+
+    /*!
+    \fn void reset()
+    \brief this method resets the class attributes to their default state
+    */
+    void reset();
 
     /*!
     \fn Point* getStart()
     \brief returns a pointer to the start Point
+    \return a pointer to a Point object
+
     \fn Point* getEnd()
     \brief returns a pointer to the end Point
+    \return a pointer to a Point object
     */
-    Point* getStart();
-    Point* getEnd();
+    Point& getStart();
+    Point& getEnd();
 
     /*!
     \fn void setStart(const Point& newStart)
     \brief sets the start to a new Point
+
     \fn void setEnd(const Point& newEnd)
     \brief sets the end to a new Point
     */
-    void setStart(const Point& newStart);
-    void setEnd(const Point& newEnd);
+    void setStart(Point& newStart);
+    void setEnd(Point& newEnd);
 
     /*!
-    \fn std::list<Point*> intersection(const Line& intersectingLine)
+    \fn double calcSlope()
+    \brief calculates the slope of the line
+    \return a slope as a double
+    */
+    double calcSlope();
+
+    /*!
+    \fn std::vector<Point> intersection(Line* intersectingLine, double tolerance = 0.001)
     \brief returns the intersection of this line and another line if any
     \brief future plans to turn this into a template that will accept any primitive
+    \param Line* intersectingLine
+    \brief the line intersecting this line
+    \return a vector of Point objects
     */
-    std::list<Point*> intersection(const Line& intersectingLine);
+    std::vector<Point> intersection(Line& intersectingLine);
 
     /*!
-    \fn std::list<Point*> subpoint(int divisions = 2)
-    \brief returns a list of points that subdivide the line,
+    \fn std::vector<Point> subpoint(int divisions = 2)
+    \brief returns a vector of points that subdivide the line,
     \brief the default of 2 gives the midpoint
     \param int divisions = 2
     \brief the number of divisions of the line
+    \return a vector of pointers to Point objects
     */
-    std::list<Point*> subpoint(int divisions = 2);
+    std::vector<Point> subpoint(int divisions = 2);
 
     /*!
-    \fn std::list<Line*> subline(int divisions = 2)
-    \brief returns a list of lines that subdivide the line
+    \fn std::vector<Line> subline(int divisions = 2)
+    \brief returns a vector of lines that subdivide the line
     \brief the default of 2 gives 2 equal halves
     \param int divisions = 2
     \brief the number of divisions of the line
+    \return a vector of pointers to Line objects
     */
-    std::list<Line*> subline(int divisions = 2);
+    std::vector<Line> subline(int divisions = 2);
 
     /*!
     \fn double getLength()
     \brief calculates and returns the length of the line
+    \return the length as a double
     */
     double getLength();
 
     /*!
     \fn double getAngle()
     \brief calculates and returns the angle of the line in radians
+    \return the angle in radians
     */
     double getAngle();
   };
