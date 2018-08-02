@@ -77,7 +77,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>This class models a 2D line with a deque of points.  
+<p>This class models a 2D line with a start point and an end point.  
  <a href="class_jinks_draw_1_1_line.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="primitives_8h_source.html">primitives.h</a>&gt;</code></p>
@@ -145,11 +145,11 @@ Private Attributes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:a9ed7047351912d1052d709dfa4aac3c9"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_jinks_draw_1_1_line.html#a9ed7047351912d1052d709dfa4aac3c9">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="class_jinks_draw_1_1_line.html">Line</a> &amp;ln)</td></tr>
-<tr class="memdesc:a9ed7047351912d1052d709dfa4aac3c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">this allows <a class="el" href="class_jinks_draw_1_1_line.html" title="This class models a 2D line with a deque of points.">Line</a> to have a stream representation  <a href="#a9ed7047351912d1052d709dfa4aac3c9">More...</a><br /></td></tr>
+<tr class="memdesc:a9ed7047351912d1052d709dfa4aac3c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">this allows <a class="el" href="class_jinks_draw_1_1_line.html" title="This class models a 2D line with a start point and an end point.">Line</a> to have a stream representation  <a href="#a9ed7047351912d1052d709dfa4aac3c9">More...</a><br /></td></tr>
 <tr class="separator:a9ed7047351912d1052d709dfa4aac3c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p class="">This class models a 2D line with a deque of points. </p>
+<div class="textblock"><p class="">This class models a 2D line with a start point and an end point. </p>
 <p class="">Methods include Intersection, Subpoint, Length, Angle... more methods may be created in the future Operator ostream is implemented </p><div class="fragment"><div class="line">Point p1 = Point(1.0, 2.0)</div><div class="line">Point p2 = Point(3.0, 4.0)</div><div class="line">cout &lt;&lt; <a class="code" href="class_jinks_draw_1_1_line.html#a0a01ff362d3d5cb6de257cdc59fdbd7a">Line</a>(p1, p2) &lt;&lt; endl; <span class="comment">// ((1.0, 2.0), (3.0, 4.0))</span></div></div><!-- fragment --> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a0a01ff362d3d5cb6de257cdc59fdbd7a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0a01ff362d3d5cb6de257cdc59fdbd7a">&#9670;&nbsp;</a></span>Line()</h2>
@@ -451,7 +451,7 @@ Friends</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>a vector of <a class="el" href="class_jinks_draw_1_1_line.html" title="This class models a 2D line with a deque of points.">Line</a> objects </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a vector of <a class="el" href="class_jinks_draw_1_1_line.html" title="This class models a 2D line with a start point and an end point.">Line</a> objects </dd></dl>
 
 </div>
 </div>
@@ -517,7 +517,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>this allows <a class="el" href="class_jinks_draw_1_1_line.html" title="This class models a 2D line with a deque of points.">Line</a> to have a stream representation </p>
+<p>this allows <a class="el" href="class_jinks_draw_1_1_line.html" title="This class models a 2D line with a start point and an end point.">Line</a> to have a stream representation </p>
 <div class="fragment"><div class="line">Point p1 = Point(1.0, 2.0);</div><div class="line">Point p2 = Point(3.0, 4.0);</div><div class="line">cout &lt;&lt; <a class="code" href="class_jinks_draw_1_1_line.html#a0a01ff362d3d5cb6de257cdc59fdbd7a">Line</a>(p1, p2) &lt;&lt; endl; <span class="comment">// Line(Point(1.0, 2.0), Point(3.0, 4.0))</span></div></div><!-- fragment --> 
 </div>
 </div>

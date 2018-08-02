@@ -159,6 +159,7 @@ bool testClassLine()
   points = l.subpoint(4);
 
   std::cout << "Line class subpoint created " << points.size() << " point(s)" << '\n';
+  std::cout << "from " << l << '\n';
 
   for (auto point = points.begin(); point != points.end(); ++point)
   {
@@ -170,6 +171,7 @@ bool testClassLine()
   std::vector<Line> lines = l.subline(4);
 
   std::cout << "Line class subline created " << lines.size() << " line(s)" << '\n';
+  std::cout << "from " << l << '\n';
 
   for (auto line = lines.begin(); line != lines.end(); ++line)
   {
@@ -205,8 +207,20 @@ bool testClassCircle()
   std::cout << "Result :" << circle1 << '\n';
 
   std::cout << "Circle::getOrigin and Circle::getRadius test :" << '\n';
-  std::cout << "Origin : " << circle1.getOrigin() << " Radius :" << circle1.getRadius() << '\n';
+  std::cout << "Origin :" << circle1.getOrigin() << " Radius :" << circle1.getRadius() << '\n';
   std::cout << "Circle::getOrigin and Circle::getRadius passed test" << '\n';
+
+  Line l = Line(origin1, origin2);
+
+  std::vector<Point> points = circle1.intersection(l);
+  std::cout << "Circle::intersection(Line) passed test with " << points.size() << " points created." << '\n';
+  std::cout << "from " << circle1 << " and " << l <<  '\n';
+
+  for (auto point = points.begin(); point != points.end(); ++point)
+  {
+    std::cout << "Point found " << *point << '\n';
+  }
+  std::cout << "Circle::intersection(Line) passed test" << '\n';
   return result;
 }
 

@@ -16,6 +16,10 @@ brought together to build more complex geometries.
 namespace JinksDraw
 {
     /**************************************************************************
+    Templates
+    **************************************************************************/
+
+    /**************************************************************************
     Aquired Code Snippets
     **************************************************************************/
     //August 1 2018 02:48
@@ -226,9 +230,10 @@ namespace JinksDraw
       {
         //lerp
         double delta = stepSize * i;
-        Point a = *(this->start) * (1.0 - delta);
-        Point b = *(this->end) * (delta);
-        Point c = a + b;
+        // Point a = *(this->start) * (1.0 - delta);
+        // Point b = *(this->end) * (delta);
+        // Point c = a + b;
+        Point c = lerp<Point>(*(this->start), *(this->end), delta);
         result.push_back(c);
       }
 
@@ -278,6 +283,12 @@ namespace JinksDraw
       return Line(start, newEnd);
     }
 
+    Line operator-(Line& lhs, Point& rhs)
+    {
+      Point newStart = lhs.getStart() - rhs;
+      Point newEnd = lhs.getEnd() - rhs;
+      return Line(newStart, newEnd);
+    }
     /**************************************************************************
     Class Circle
     **************************************************************************/
@@ -310,9 +321,68 @@ namespace JinksDraw
         this->origin = &newOrigin;
       };
     }
+
     void Circle::setRadius(double newRadius)
     {
       this->radius = newRadius;
+    }
+
+    std::vector<Point> Circle::intersection(Line& line)
+    {
+      std::vector<Point> points;
+
+      //formulae calculates as though circle is at origin (0,0)
+      //line needs to be moved to accomodate
+      //reference August 2 2018 14:06
+      //http://mathworld.wolfram.com/Circle-LineIntersection.html
+      Line lineAtOrigin = line - *(this->origin);
+      Point lineStart = lineAtOrigin.getStart();
+      Point lineEnd = lineAtOrigin.getEnd();
+
+      Point delta = lineAtOrigin.getEnd() - lineAtOrigin.getStart();
+
+      double r = this->radius;
+      double dx = delta.getX();
+      double dy = delta.getY();
+
+      double dr = sqrt( pow(dx, 2.0) + pow(dy, 2.0));
+
+      double deter = Det(lineStart.getX(), lineEnd.getX(), lineStart.getY(), lineEnd.getY());
+
+      double sgnDy = dy < 0.0 ? -1.0 : 1.0;
+
+      double disc = pow(r, 2.0) * pow(dr, 2.0) - pow(deter, 2.0);
+
+      double xPos = ((deter * dy) + (sgnDy * dx * sqrt((pow(r, 2.0) * pow(dr, 2.0)) - pow(deter, 2.0)))) / pow(dr, 2.0);
+      double xNeg = ((deter * dy) - (sgnDy * dx * sqrt((pow(r, 2.0) * pow(dr, 2.0)) - pow(deter, 2.0)))) / pow(dr, 2.0);
+
+      double yPos = ((-deter * dx) + (abs(dy) * sqrt((pow(r, 2.0) * pow(dr, 2.0)) - pow(deter, 2.0)))) / pow(dr, 2.0);
+      double yNeg = ((-deter * dx) - (abs(dy) * sqrt((pow(r, 2.0) * pow(dr, 2.0)) - pow(deter, 2.0)))) / pow(dr, 2.0);
+
+      if (disc < 0.0)
+      {
+        //no intersection (zero points)
+      }
+      else if (disc == 0.0)
+      {
+        //tangent intersection (one point)
+        Point tangent = Point(xPos, yPos);
+        points.push_back(tangent  + *(this->origin));
+      }
+      else if (disc > 0.0)
+      {
+        //intersection (two points)
+        Point inter1 = Point(xPos, yPos);
+        Point inter2 = Point(xNeg, yNeg);
+        points.push_back(inter1  + *(this->origin));
+        points.push_back(inter2  + *(this->origin));
+      }
+      else
+      {
+        //error (zero points)
+      }
+
+      return points;
     }
 
     std::ostream& operator<<(std::ostream& os, const Circle& cr)

@@ -2,6 +2,11 @@
 \label{class_jinks_draw_1_1_circle}\index{Jinks\+Draw\+::\+Circle@{Jinks\+Draw\+::\+Circle}}
 
 
+This class models a 2D circle with an origin and a radius.  
+
+
+
+
 {\ttfamily \#include $<$primitives.\+h$>$}
 
 Inheritance diagram for Jinks\+Draw\+:\+:Circle\+:\begin{figure}[H]
@@ -42,6 +47,17 @@ double \mbox{\hyperlink{class_jinks_draw_1_1_circle_ad38af0c31ab4aa5d90aaf6cf83a
 std\+::ostream \& \mbox{\hyperlink{class_jinks_draw_1_1_circle_acde181b779d97f3d80bc38d27e08c403}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{class_jinks_draw_1_1_circle}{Circle}} \&cr)
 \begin{DoxyCompactList}\small\item\em this allows \mbox{\hyperlink{class_jinks_draw_1_1_circle}{Circle}} to have a stream representation \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\subsection{Detailed Description}
+This class models a 2D circle with an origin and a radius. 
+
+Methods include Intersection, Subpoint, Subline... more methods may be created in the future Operator ostream is implemented 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Point \mbox{\hyperlink{class_jinks_draw_1_1_circle_a2214560f54448ce8c0bbb41dc956abe4}{origin}} = Point(1.0, 2.0);}
+\DoxyCodeLine{\textcolor{keywordtype}{double} \mbox{\hyperlink{class_jinks_draw_1_1_circle_ad38af0c31ab4aa5d90aaf6cf83a60ab2}{radius}} = 10.0;}
+\DoxyCodeLine{cout << \mbox{\hyperlink{class_jinks_draw_1_1_circle_a716c96c7f03a6ab5865f0da4dc9c4b52}{Circle}}(\mbox{\hyperlink{class_jinks_draw_1_1_circle_a2214560f54448ce8c0bbb41dc956abe4}{origin}}, \mbox{\hyperlink{class_jinks_draw_1_1_circle_ad38af0c31ab4aa5d90aaf6cf83a60ab2}{radius}}) << endl; \textcolor{comment}{// Circle(O:Point(1.0, 2.0), R:10.0)}}
+\end{DoxyCode}
+ 
 
 \subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{class_jinks_draw_1_1_circle_a716c96c7f03a6ab5865f0da4dc9c4b52}\label{class_jinks_draw_1_1_circle_a716c96c7f03a6ab5865f0da4dc9c4b52}} 

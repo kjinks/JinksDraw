@@ -216,7 +216,7 @@ namespace JinksDraw
 
   /*!
   \class Line : public Primitive
-  \brief This class models a 2D line with a deque of points.
+  \brief This class models a 2D line with a start point and an end point
   \brief Methods include Intersection, Subpoint, Length, Angle...
   \brief more methods may be created in the future
   \brief Operator ostream is implemented
@@ -229,6 +229,12 @@ namespace JinksDraw
   class Line : public Primitive
   {
   private:
+    /*!
+    \var Point* start = new Point();
+    \brief start point of line
+    \var Point* end = new Point();
+    \brief end point of line
+    */
     Point* start = new Point();
     Point* end = new Point();
 
@@ -351,11 +357,41 @@ namespace JinksDraw
     */
     friend std::ostream& operator<<(std::ostream& os, const Line& ln);
 
+    /*!
+    \fn friend Point operator-(const Line& lhs, const Point& rhs)
+    \brief Allows subtracting two Points
+    \code{.cpp}
+    Point p1 = Point(1.0, 2.0)
+    Point p2 = Point(3.0, 4.0)
+    Line l = Line(p1, p2)
+
+    cout << (l - p1) << endl; // Line(Point(0.0, 0.0), Point(2.0, 2.0))
+    \endcode
+    */
+    friend Line operator-(const Line& lhs, const Point& rhs);
   };
 
+  /*!
+  \class Circle : public Primitive
+  \brief This class models a 2D circle with an origin and a radius
+  \brief Methods include Intersection, Subpoint, Subline...
+  \brief more methods may be created in the future
+  \brief Operator ostream is implemented
+  \code{.cpp}
+  Point origin = Point(1.0, 2.0);
+  double radius = 10.0;
+  cout << Circle(origin, radius) << endl; // Circle(O:Point(1.0, 2.0), R:10.0)
+  \endcode
+  */
   class Circle : public Primitive
   {
   private:
+    /*!
+    \var Point* origin = new Point()
+    \brief origin point of circle
+    \ver double radius = 0.0
+    \brief radius of circle
+    */
     Point* origin = new Point();
     double radius = 0.0;
   public:
