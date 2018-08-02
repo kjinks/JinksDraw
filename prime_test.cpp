@@ -154,6 +154,8 @@ bool testClassLine()
     std::cout << "Point found " << *point << '\n';
   }
 
+  //test subpoint
+
   points = l.subpoint(4);
 
   std::cout << "Line class subpoint created " << points.size() << " point(s)" << '\n';
@@ -162,6 +164,8 @@ bool testClassLine()
   {
     std::cout << "Point found " << *point << '\n';
   }
+
+  //test subline
 
   std::vector<Line> lines = l.subline(4);
 
@@ -172,6 +176,37 @@ bool testClassLine()
     std::cout << "Line found " << *line << '\n';
   }
 
+  return result;
+}
+
+bool testClassCircle()
+{
+  bool result = true;
+
+
+  Point origin1 = Point(10.0, 20.0);
+  double radius1 = 100.0;
+  Point origin2 = Point(15.0, 5.0);
+  double radius2 = 100.0;
+
+  Circle circle1 = Circle(origin1, radius1);
+  Circle circle2 = Circle(origin2, radius2);
+
+  std::cout << "Circle class instantiated successfully" << '\n';
+  std::cout << "Created two circles : " << '\n';
+  std::cout << circle1 << '\n';
+  std::cout << circle2 << '\n';
+
+  Point newOrigin = Point(12.0, 13.0);
+  circle1.setOrigin(newOrigin);
+  circle1.setRadius(99.0);
+
+  std::cout << "Circle::setOrigin and Circle::setRadius passed" << '\n';
+  std::cout << "Result :" << circle1 << '\n';
+
+  std::cout << "Circle::getOrigin and Circle::getRadius test :" << '\n';
+  std::cout << "Origin : " << circle1.getOrigin() << " Radius :" << circle1.getRadius() << '\n';
+  std::cout << "Circle::getOrigin and Circle::getRadius passed test" << '\n';
   return result;
 }
 
@@ -190,5 +225,13 @@ int main(int argc, char *argv[])
   {
     std::cout << "Line class passed test" << '\n';
   };
+
+  //TEST CLASS CIRCLE
+
+  if(testClassCircle())
+  {
+    std::cout << "Circle class passed test" << '\n';
+  };
+
   return 0;
 }

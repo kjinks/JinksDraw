@@ -27,13 +27,15 @@ double \mbox{\hyperlink{class_jinks_draw_1_1_point_a3dcffb5d490aa4c17a6d468b944f
 void \mbox{\hyperlink{class_jinks_draw_1_1_point_a88c728619ffd56b0a05e73aa12a749e1}{setX}} (double \mbox{\hyperlink{class_jinks_draw_1_1_point_a49a46c3d78c0c68260d55dacdee458de}{x}})
 \begin{DoxyCompactList}\small\item\em sets the x coordinate \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_jinks_draw_1_1_point_a828cbcb4a21065420758e422265dc35f}{setY}} (double \mbox{\hyperlink{class_jinks_draw_1_1_point_ad2dbfbd07baf41cfe82737a4f347bab5}{y}})
-\begin{DoxyCompactList}\small\item\em sets the y coordinate \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em sets the y coordinate \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_jinks_draw_1_1_point_a8dad65ea830fc616d2c1fdddf2809cb0}{set\+By\+Polar}} (double radius, double angle)
+\begin{DoxyCompactList}\small\item\em sets the x and y coordinates based on radius and angle from origin (0,0) \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-double \mbox{\hyperlink{class_jinks_draw_1_1_point_a49a46c3d78c0c68260d55dacdee458de}{x}}
+double \mbox{\hyperlink{class_jinks_draw_1_1_point_a49a46c3d78c0c68260d55dacdee458de}{x}} = 0.\+0
 \begin{DoxyCompactList}\small\item\em the x coordinate \end{DoxyCompactList}\item 
-double \mbox{\hyperlink{class_jinks_draw_1_1_point_ad2dbfbd07baf41cfe82737a4f347bab5}{y}}
+double \mbox{\hyperlink{class_jinks_draw_1_1_point_ad2dbfbd07baf41cfe82737a4f347bab5}{y}} = 0.\+0
 \begin{DoxyCompactList}\small\item\em the y coordinate \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Friends}
 \begin{DoxyCompactItemize}
@@ -44,6 +46,10 @@ std\+::ostream \& \mbox{\hyperlink{class_jinks_draw_1_1_point_a40a2c347e8c84ef40
 \begin{DoxyCompactList}\small\item\em The $\ast$ is to scale the coordinates of the \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}}. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} \mbox{\hyperlink{class_jinks_draw_1_1_point_a143408ed7b4a531fc9c50620a27076b7}{operator$\ast$}} (const double lhs, const \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} \&rhs)
 \begin{DoxyCompactList}\small\item\em The $\ast$ is to scale the coordinates of the \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} \mbox{\hyperlink{class_jinks_draw_1_1_point_aa273408c569cbd473a15daf3cb65c980}{operator/}} (const \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} \&lhs, const double rhs)
+\item 
+\mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} \mbox{\hyperlink{class_jinks_draw_1_1_point_ac21d6c4989dc10c09dcdc014ce43f44e}{operator/}} (const double lhs, const \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} \&rhs)
+\begin{DoxyCompactList}\small\item\em The / is to scale the coordinates of the \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}}. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} \mbox{\hyperlink{class_jinks_draw_1_1_point_a607e608ebadca0198af3a6d8a001ec4a}{operator+}} (const \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} \&lhs, const \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} \&rhs)
 \begin{DoxyCompactList}\small\item\em Allows adding two Points. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} \mbox{\hyperlink{class_jinks_draw_1_1_point_a35071bf200fdd94b49abf93d595b3b24}{operator-\/}} (const \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} \&lhs, const \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} \&rhs)
@@ -133,6 +139,23 @@ access the y coordinate
 \begin{DoxyReturn}{Returns}
 the y coordinate as a double 
 \end{DoxyReturn}
+\mbox{\Hypertarget{class_jinks_draw_1_1_point_a8dad65ea830fc616d2c1fdddf2809cb0}\label{class_jinks_draw_1_1_point_a8dad65ea830fc616d2c1fdddf2809cb0}} 
+\index{Jinks\+Draw\+::\+Point@{Jinks\+Draw\+::\+Point}!set\+By\+Polar@{set\+By\+Polar}}
+\index{set\+By\+Polar@{set\+By\+Polar}!Jinks\+Draw\+::\+Point@{Jinks\+Draw\+::\+Point}}
+\subsubsection{\texorpdfstring{set\+By\+Polar()}{setByPolar()}}
+{\footnotesize\ttfamily void Jinks\+Draw\+::\+Point\+::set\+By\+Polar (\begin{DoxyParamCaption}\item[{double}]{radius,  }\item[{double}]{angle }\end{DoxyParamCaption})}
+
+
+
+sets the x and y coordinates based on radius and angle from origin (0,0) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em double} & radius distance from origin (0,0) \\
+\hline
+{\em double} & angle angle in radians from origin (0,0) \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{class_jinks_draw_1_1_point_a88c728619ffd56b0a05e73aa12a749e1}\label{class_jinks_draw_1_1_point_a88c728619ffd56b0a05e73aa12a749e1}} 
 \index{Jinks\+Draw\+::\+Point@{Jinks\+Draw\+::\+Point}!setX@{setX}}
 \index{setX@{setX}!Jinks\+Draw\+::\+Point@{Jinks\+Draw\+::\+Point}}
@@ -240,6 +263,40 @@ Allows subtracting two Points.
 \DoxyCodeLine{}
 \DoxyCodeLine{cout << p4 << endl; \textcolor{comment}{// (2.0, 2.0)}}
 \end{DoxyCode}
+ \mbox{\Hypertarget{class_jinks_draw_1_1_point_aa273408c569cbd473a15daf3cb65c980}\label{class_jinks_draw_1_1_point_aa273408c569cbd473a15daf3cb65c980}} 
+\index{Jinks\+Draw\+::\+Point@{Jinks\+Draw\+::\+Point}!operator/@{operator/}}
+\index{operator/@{operator/}!Jinks\+Draw\+::\+Point@{Jinks\+Draw\+::\+Point}}
+\subsubsection{\texorpdfstring{operator/}{operator/}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} operator/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} \&}]{lhs,  }\item[{const double}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+\mbox{\Hypertarget{class_jinks_draw_1_1_point_ac21d6c4989dc10c09dcdc014ce43f44e}\label{class_jinks_draw_1_1_point_ac21d6c4989dc10c09dcdc014ce43f44e}} 
+\index{Jinks\+Draw\+::\+Point@{Jinks\+Draw\+::\+Point}!operator/@{operator/}}
+\index{operator/@{operator/}!Jinks\+Draw\+::\+Point@{Jinks\+Draw\+::\+Point}}
+\subsubsection{\texorpdfstring{operator/}{operator/}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} operator/ (\begin{DoxyParamCaption}\item[{const double}]{lhs,  }\item[{const \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+The / is to scale the coordinates of the \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}}. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{double} d = 5.0;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\mbox{\hyperlink{class_jinks_draw_1_1_point_a052cf69d98628f9ee7fd6649c401c409}{Point}} p2 = \mbox{\hyperlink{class_jinks_draw_1_1_point_a052cf69d98628f9ee7fd6649c401c409}{Point}}(5.0, 25.0) / d;}
+\DoxyCodeLine{}
+\DoxyCodeLine{cout << p2 << endl; \textcolor{comment}{// (1.0, 5.0)}}
+\end{DoxyCode}
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{double} d = 50.0;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\mbox{\hyperlink{class_jinks_draw_1_1_point_a052cf69d98628f9ee7fd6649c401c409}{Point}} p2 = d / \mbox{\hyperlink{class_jinks_draw_1_1_point_a052cf69d98628f9ee7fd6649c401c409}{Point}}(5.0, 25.0);}
+\DoxyCodeLine{}
+\DoxyCodeLine{cout << p2 << endl; \textcolor{comment}{// (10.0, 2.0)}}
+\end{DoxyCode}
  \mbox{\Hypertarget{class_jinks_draw_1_1_point_a40a2c347e8c84ef40c1a170ab17fec47}\label{class_jinks_draw_1_1_point_a40a2c347e8c84ef40c1a170ab17fec47}} 
 \index{Jinks\+Draw\+::\+Point@{Jinks\+Draw\+::\+Point}!operator$<$$<$@{operator$<$$<$}}
 \index{operator$<$$<$@{operator$<$$<$}!Jinks\+Draw\+::\+Point@{Jinks\+Draw\+::\+Point}}
@@ -261,7 +318,7 @@ this allows \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} to have a strea
 \index{Jinks\+Draw\+::\+Point@{Jinks\+Draw\+::\+Point}!x@{x}}
 \index{x@{x}!Jinks\+Draw\+::\+Point@{Jinks\+Draw\+::\+Point}}
 \subsubsection{\texorpdfstring{x}{x}}
-{\footnotesize\ttfamily double Jinks\+Draw\+::\+Point\+::x\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily double Jinks\+Draw\+::\+Point\+::x = 0.\+0\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
@@ -271,7 +328,7 @@ the x coordinate
 \index{Jinks\+Draw\+::\+Point@{Jinks\+Draw\+::\+Point}!y@{y}}
 \index{y@{y}!Jinks\+Draw\+::\+Point@{Jinks\+Draw\+::\+Point}}
 \subsubsection{\texorpdfstring{y}{y}}
-{\footnotesize\ttfamily double Jinks\+Draw\+::\+Point\+::y\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily double Jinks\+Draw\+::\+Point\+::y = 0.\+0\hspace{0.3cm}{\ttfamily [private]}}
 
 
 

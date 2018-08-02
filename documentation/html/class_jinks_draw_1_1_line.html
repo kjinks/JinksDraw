@@ -70,6 +70,7 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="class_jinks_draw_1_1_line-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">JinksDraw::Line Class Reference</div>  </div>
@@ -110,6 +111,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:affea1d620e660a388d30808ac9404457"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_jinks_draw_1_1_line.html#affea1d620e660a388d30808ac9404457">setEnd</a> (<a class="el" href="class_jinks_draw_1_1_point.html">Point</a> &amp;newEnd)</td></tr>
 <tr class="memdesc:affea1d620e660a388d30808ac9404457"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the end to a new <a class="el" href="class_jinks_draw_1_1_point.html" title="This class models a point in 2D space with an x and a y coordinate.">Point</a>  <a href="#affea1d620e660a388d30808ac9404457">More...</a><br /></td></tr>
 <tr class="separator:affea1d620e660a388d30808ac9404457"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b2ba2dbbdf5fb51dcf0eda0614e5259"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_jinks_draw_1_1_line.html#a0b2ba2dbbdf5fb51dcf0eda0614e5259">setByPolar</a> (<a class="el" href="class_jinks_draw_1_1_point.html">Point</a> origin, double radius, double angle)</td></tr>
+<tr class="separator:a0b2ba2dbbdf5fb51dcf0eda0614e5259"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea73a9418815e5d255044a6dbce37e3e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_jinks_draw_1_1_line.html#aea73a9418815e5d255044a6dbce37e3e">calcSlope</a> ()</td></tr>
 <tr class="memdesc:aea73a9418815e5d255044a6dbce37e3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculates the slope of the line  <a href="#aea73a9418815e5d255044a6dbce37e3e">More...</a><br /></td></tr>
 <tr class="separator:aea73a9418815e5d255044a6dbce37e3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -128,6 +131,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae344d8ad62e6044cfa2a5d31e1262d00"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_jinks_draw_1_1_line.html#ae344d8ad62e6044cfa2a5d31e1262d00">getAngle</a> ()</td></tr>
 <tr class="memdesc:ae344d8ad62e6044cfa2a5d31e1262d00"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculates and returns the angle of the line in radians  <a href="#ae344d8ad62e6044cfa2a5d31e1262d00">More...</a><br /></td></tr>
 <tr class="separator:ae344d8ad62e6044cfa2a5d31e1262d00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cfaefbf55c982b045562e34c576ce81"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_jinks_draw_1_1_line.html">Line</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_jinks_draw_1_1_line.html#a0cfaefbf55c982b045562e34c576ce81">getUnitLine</a> ()</td></tr>
+<tr class="memdesc:a0cfaefbf55c982b045562e34c576ce81"><td class="mdescLeft">&#160;</td><td class="mdescRight">recalculates end point to be at 1 unit and same angle from start point  <a href="#a0cfaefbf55c982b045562e34c576ce81">More...</a><br /></td></tr>
+<tr class="separator:a0cfaefbf55c982b045562e34c576ce81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -135,11 +141,16 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a697fccb64f32b900f86dbc89ac69fec3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c04e4d06b7c8bafff608b1ffae6169b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_jinks_draw_1_1_point.html">Point</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_jinks_draw_1_1_line.html#a6c04e4d06b7c8bafff608b1ffae6169b">end</a> = new <a class="el" href="class_jinks_draw_1_1_point.html">Point</a>()</td></tr>
 <tr class="separator:a6c04e4d06b7c8bafff608b1ffae6169b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a9ed7047351912d1052d709dfa4aac3c9"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_jinks_draw_1_1_line.html#a9ed7047351912d1052d709dfa4aac3c9">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="class_jinks_draw_1_1_line.html">Line</a> &amp;ln)</td></tr>
+<tr class="memdesc:a9ed7047351912d1052d709dfa4aac3c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">this allows <a class="el" href="class_jinks_draw_1_1_line.html" title="This class models a 2D line with a deque of points.">Line</a> to have a stream representation  <a href="#a9ed7047351912d1052d709dfa4aac3c9">More...</a><br /></td></tr>
+<tr class="separator:a9ed7047351912d1052d709dfa4aac3c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p class="">This class models a 2D line with a deque of points. </p>
-<p class="">Methods include Intersection, Subpoint, Length, Angle... more methods may be created in the future </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<p class="">Methods include Intersection, Subpoint, Length, Angle... more methods may be created in the future Operator ostream is implemented </p><div class="fragment"><div class="line">Point p1 = Point(1.0, 2.0)</div><div class="line">Point p2 = Point(3.0, 4.0)</div><div class="line">cout &lt;&lt; <a class="code" href="class_jinks_draw_1_1_line.html#a0a01ff362d3d5cb6de257cdc59fdbd7a">Line</a>(p1, p2) &lt;&lt; endl; <span class="comment">// ((1.0, 2.0), (3.0, 4.0))</span></div></div><!-- fragment --> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a0a01ff362d3d5cb6de257cdc59fdbd7a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0a01ff362d3d5cb6de257cdc59fdbd7a">&#9670;&nbsp;</a></span>Line()</h2>
 
@@ -278,6 +289,25 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a0cfaefbf55c982b045562e34c576ce81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cfaefbf55c982b045562e34c576ce81">&#9670;&nbsp;</a></span>getUnitLine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_jinks_draw_1_1_line.html">Line</a> JinksDraw::Line::getUnitLine </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>recalculates end point to be at 1 unit and same angle from start point </p>
+
+</div>
+</div>
 <a id="a159d4850578aff530064d53c7461fa03"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a159d4850578aff530064d53c7461fa03">&#9670;&nbsp;</a></span>intersection()</h2>
 
@@ -321,6 +351,40 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>this method resets the class attributes to their default state </p>
+
+</div>
+</div>
+<a id="a0b2ba2dbbdf5fb51dcf0eda0614e5259"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b2ba2dbbdf5fb51dcf0eda0614e5259">&#9670;&nbsp;</a></span>setByPolar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void JinksDraw::Line::setByPolar </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_jinks_draw_1_1_point.html">Point</a>&#160;</td>
+          <td class="paramname"><em>origin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>radius</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>angle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -416,6 +480,45 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a vector of <a class="el" href="class_jinks_draw_1_1_point.html" title="This class models a point in 2D space with an x and a y coordinate.">Point</a> objects </dd></dl>
 
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a id="a9ed7047351912d1052d709dfa4aac3c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ed7047351912d1052d709dfa4aac3c9">&#9670;&nbsp;</a></span>operator&lt;&lt;</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream &amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_jinks_draw_1_1_line.html">Line</a> &amp;&#160;</td>
+          <td class="paramname"><em>ln</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>this allows <a class="el" href="class_jinks_draw_1_1_line.html" title="This class models a 2D line with a deque of points.">Line</a> to have a stream representation </p>
+<div class="fragment"><div class="line">Point p1 = Point(1.0, 2.0);</div><div class="line">Point p2 = Point(3.0, 4.0);</div><div class="line">cout &lt;&lt; <a class="code" href="class_jinks_draw_1_1_line.html#a0a01ff362d3d5cb6de257cdc59fdbd7a">Line</a>(p1, p2) &lt;&lt; endl; <span class="comment">// Line(Point(1.0, 2.0), Point(3.0, 4.0))</span></div></div><!-- fragment --> 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>

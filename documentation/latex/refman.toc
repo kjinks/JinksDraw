@@ -13,56 +13,73 @@
 \contentsline {subsubsection}{\numberline {5.1.1.1}P\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}R\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}I\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}M\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}N\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}U\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}LL}{9}{subsubsection.5.1.1.1}
 \contentsline {chapter}{\numberline {6}Class Documentation}{11}{chapter.6}
 \contentsline {section}{\numberline {6.1}Jinks\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Draw\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:Circle Class Reference}{11}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Constructor \& Destructor Documentation}{11}{subsection.6.1.1}
-\contentsline {subsubsection}{\numberline {6.1.1.1}Circle()}{11}{subsubsection.6.1.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Member Data Documentation}{12}{subsection.6.1.2}
-\contentsline {subsubsection}{\numberline {6.1.2.1}origin}{12}{subsubsection.6.1.2.1}
-\contentsline {subsubsection}{\numberline {6.1.2.2}radius}{12}{subsubsection.6.1.2.2}
-\contentsline {section}{\numberline {6.2}Jinks\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Draw\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:Line Class Reference}{12}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Detailed Description}{13}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Constructor \& Destructor Documentation}{13}{subsection.6.2.2}
-\contentsline {subsubsection}{\numberline {6.2.2.1}Line()}{13}{subsubsection.6.2.2.1}
-\contentsline {subsection}{\numberline {6.2.3}Member Function Documentation}{14}{subsection.6.2.3}
-\contentsline {subsubsection}{\numberline {6.2.3.1}calc\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Slope()}{14}{subsubsection.6.2.3.1}
-\contentsline {subsubsection}{\numberline {6.2.3.2}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Angle()}{14}{subsubsection.6.2.3.2}
-\contentsline {subsubsection}{\numberline {6.2.3.3}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}End()}{14}{subsubsection.6.2.3.3}
-\contentsline {subsubsection}{\numberline {6.2.3.4}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Length()}{15}{subsubsection.6.2.3.4}
-\contentsline {subsubsection}{\numberline {6.2.3.5}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Start()}{15}{subsubsection.6.2.3.5}
-\contentsline {subsubsection}{\numberline {6.2.3.6}intersection()}{15}{subsubsection.6.2.3.6}
-\contentsline {subsubsection}{\numberline {6.2.3.7}reset()}{16}{subsubsection.6.2.3.7}
-\contentsline {subsubsection}{\numberline {6.2.3.8}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}End()}{16}{subsubsection.6.2.3.8}
-\contentsline {subsubsection}{\numberline {6.2.3.9}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Start()}{16}{subsubsection.6.2.3.9}
-\contentsline {subsubsection}{\numberline {6.2.3.10}subline()}{16}{subsubsection.6.2.3.10}
-\contentsline {subsubsection}{\numberline {6.2.3.11}subpoint()}{17}{subsubsection.6.2.3.11}
-\contentsline {subsection}{\numberline {6.2.4}Member Data Documentation}{17}{subsection.6.2.4}
-\contentsline {subsubsection}{\numberline {6.2.4.1}end}{17}{subsubsection.6.2.4.1}
-\contentsline {subsubsection}{\numberline {6.2.4.2}start}{17}{subsubsection.6.2.4.2}
-\contentsline {section}{\numberline {6.3}Jinks\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Draw\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:Point Class Reference}{17}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Detailed Description}{18}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}Constructor \& Destructor Documentation}{19}{subsection.6.3.2}
-\contentsline {subsubsection}{\numberline {6.3.2.1}Point()}{19}{subsubsection.6.3.2.1}
-\contentsline {subsection}{\numberline {6.3.3}Member Function Documentation}{19}{subsection.6.3.3}
-\contentsline {subsubsection}{\numberline {6.3.3.1}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}X()}{19}{subsubsection.6.3.3.1}
-\contentsline {subsubsection}{\numberline {6.3.3.2}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Y()}{19}{subsubsection.6.3.3.2}
-\contentsline {subsubsection}{\numberline {6.3.3.3}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}X()}{19}{subsubsection.6.3.3.3}
-\contentsline {subsubsection}{\numberline {6.3.3.4}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Y()}{20}{subsubsection.6.3.3.4}
-\contentsline {subsection}{\numberline {6.3.4}Friends And Related Function Documentation}{20}{subsection.6.3.4}
-\contentsline {subsubsection}{\numberline {6.3.4.1}operator$\ast $\hspace {0.1cm}{\relax \fontsize {8}{9.5}\selectfont \abovedisplayskip 6\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 3\p@ plus\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 8\p@ plus2\p@ minus4\p@ \itemsep 4\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip \ttfamily [1/2]}}{20}{subsubsection.6.3.4.1}
-\contentsline {subsubsection}{\numberline {6.3.4.2}operator$\ast $\hspace {0.1cm}{\relax \fontsize {8}{9.5}\selectfont \abovedisplayskip 6\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 3\p@ plus\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 8\p@ plus2\p@ minus4\p@ \itemsep 4\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip \ttfamily [2/2]}}{20}{subsubsection.6.3.4.2}
-\contentsline {subsubsection}{\numberline {6.3.4.3}operator+}{21}{subsubsection.6.3.4.3}
-\contentsline {subsubsection}{\numberline {6.3.4.4}operator-\/}{21}{subsubsection.6.3.4.4}
-\contentsline {subsubsection}{\numberline {6.3.4.5}operator$<$$<$}{21}{subsubsection.6.3.4.5}
-\contentsline {subsection}{\numberline {6.3.5}Member Data Documentation}{21}{subsection.6.3.5}
-\contentsline {subsubsection}{\numberline {6.3.5.1}x}{21}{subsubsection.6.3.5.1}
-\contentsline {subsubsection}{\numberline {6.3.5.2}y}{22}{subsubsection.6.3.5.2}
-\contentsline {section}{\numberline {6.4}Jinks\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Draw\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:Primitive Class Reference}{22}{section.6.4}
-\contentsline {subsection}{\numberline {6.4.1}Detailed Description}{22}{subsection.6.4.1}
-\contentsline {section}{\numberline {6.5}Jinks\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Draw\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:Rectangle Class Reference}{22}{section.6.5}
-\contentsline {subsection}{\numberline {6.5.1}Constructor \& Destructor Documentation}{23}{subsection.6.5.1}
-\contentsline {subsubsection}{\numberline {6.5.1.1}Rectangle()}{23}{subsubsection.6.5.1.1}
-\contentsline {subsection}{\numberline {6.5.2}Member Data Documentation}{23}{subsection.6.5.2}
-\contentsline {subsubsection}{\numberline {6.5.2.1}lower\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Left}{23}{subsubsection.6.5.2.1}
-\contentsline {subsubsection}{\numberline {6.5.2.2}upper\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Right}{23}{subsubsection.6.5.2.2}
-\contentsline {chapter}{\numberline {7}File Documentation}{25}{chapter.7}
-\contentsline {section}{\numberline {7.1}/home/kenjinks/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Documents/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Jinks\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Draw/primitives.h File Reference}{25}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Detailed Description}{26}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {6.1.1}Constructor \& Destructor Documentation}{12}{subsection.6.1.1}
+\contentsline {subsubsection}{\numberline {6.1.1.1}Circle()}{12}{subsubsection.6.1.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Member Function Documentation}{12}{subsection.6.1.2}
+\contentsline {subsubsection}{\numberline {6.1.2.1}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Origin()}{12}{subsubsection.6.1.2.1}
+\contentsline {subsubsection}{\numberline {6.1.2.2}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Radius()}{12}{subsubsection.6.1.2.2}
+\contentsline {subsubsection}{\numberline {6.1.2.3}intersection()\hspace {0.1cm}{\relax \fontsize {8}{9.5}\selectfont \abovedisplayskip 6\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 3\p@ plus\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 8\p@ plus2\p@ minus4\p@ \itemsep 4\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip \ttfamily [1/2]}}{12}{subsubsection.6.1.2.3}
+\contentsline {subsubsection}{\numberline {6.1.2.4}intersection()\hspace {0.1cm}{\relax \fontsize {8}{9.5}\selectfont \abovedisplayskip 6\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 3\p@ plus\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 8\p@ plus2\p@ minus4\p@ \itemsep 4\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip \ttfamily [2/2]}}{13}{subsubsection.6.1.2.4}
+\contentsline {subsubsection}{\numberline {6.1.2.5}reset()}{13}{subsubsection.6.1.2.5}
+\contentsline {subsubsection}{\numberline {6.1.2.6}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Origin()}{13}{subsubsection.6.1.2.6}
+\contentsline {subsubsection}{\numberline {6.1.2.7}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Radius()}{14}{subsubsection.6.1.2.7}
+\contentsline {subsection}{\numberline {6.1.3}Friends And Related Function Documentation}{14}{subsection.6.1.3}
+\contentsline {subsubsection}{\numberline {6.1.3.1}operator$<$$<$}{14}{subsubsection.6.1.3.1}
+\contentsline {subsection}{\numberline {6.1.4}Member Data Documentation}{14}{subsection.6.1.4}
+\contentsline {subsubsection}{\numberline {6.1.4.1}origin}{14}{subsubsection.6.1.4.1}
+\contentsline {subsubsection}{\numberline {6.1.4.2}radius}{14}{subsubsection.6.1.4.2}
+\contentsline {section}{\numberline {6.2}Jinks\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Draw\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:Line Class Reference}{15}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Detailed Description}{16}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Constructor \& Destructor Documentation}{16}{subsection.6.2.2}
+\contentsline {subsubsection}{\numberline {6.2.2.1}Line()}{16}{subsubsection.6.2.2.1}
+\contentsline {subsection}{\numberline {6.2.3}Member Function Documentation}{16}{subsection.6.2.3}
+\contentsline {subsubsection}{\numberline {6.2.3.1}calc\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Slope()}{16}{subsubsection.6.2.3.1}
+\contentsline {subsubsection}{\numberline {6.2.3.2}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Angle()}{17}{subsubsection.6.2.3.2}
+\contentsline {subsubsection}{\numberline {6.2.3.3}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}End()}{17}{subsubsection.6.2.3.3}
+\contentsline {subsubsection}{\numberline {6.2.3.4}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Length()}{17}{subsubsection.6.2.3.4}
+\contentsline {subsubsection}{\numberline {6.2.3.5}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Start()}{17}{subsubsection.6.2.3.5}
+\contentsline {subsubsection}{\numberline {6.2.3.6}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Unit\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Line()}{18}{subsubsection.6.2.3.6}
+\contentsline {subsubsection}{\numberline {6.2.3.7}intersection()}{18}{subsubsection.6.2.3.7}
+\contentsline {subsubsection}{\numberline {6.2.3.8}reset()}{18}{subsubsection.6.2.3.8}
+\contentsline {subsubsection}{\numberline {6.2.3.9}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}By\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Polar()}{18}{subsubsection.6.2.3.9}
+\contentsline {subsubsection}{\numberline {6.2.3.10}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}End()}{19}{subsubsection.6.2.3.10}
+\contentsline {subsubsection}{\numberline {6.2.3.11}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Start()}{19}{subsubsection.6.2.3.11}
+\contentsline {subsubsection}{\numberline {6.2.3.12}subline()}{19}{subsubsection.6.2.3.12}
+\contentsline {subsubsection}{\numberline {6.2.3.13}subpoint()}{19}{subsubsection.6.2.3.13}
+\contentsline {subsection}{\numberline {6.2.4}Friends And Related Function Documentation}{20}{subsection.6.2.4}
+\contentsline {subsubsection}{\numberline {6.2.4.1}operator$<$$<$}{20}{subsubsection.6.2.4.1}
+\contentsline {subsection}{\numberline {6.2.5}Member Data Documentation}{20}{subsection.6.2.5}
+\contentsline {subsubsection}{\numberline {6.2.5.1}end}{20}{subsubsection.6.2.5.1}
+\contentsline {subsubsection}{\numberline {6.2.5.2}start}{20}{subsubsection.6.2.5.2}
+\contentsline {section}{\numberline {6.3}Jinks\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Draw\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:Point Class Reference}{21}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Detailed Description}{22}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Constructor \& Destructor Documentation}{22}{subsection.6.3.2}
+\contentsline {subsubsection}{\numberline {6.3.2.1}Point()}{22}{subsubsection.6.3.2.1}
+\contentsline {subsection}{\numberline {6.3.3}Member Function Documentation}{22}{subsection.6.3.3}
+\contentsline {subsubsection}{\numberline {6.3.3.1}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}X()}{22}{subsubsection.6.3.3.1}
+\contentsline {subsubsection}{\numberline {6.3.3.2}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Y()}{23}{subsubsection.6.3.3.2}
+\contentsline {subsubsection}{\numberline {6.3.3.3}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}By\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Polar()}{23}{subsubsection.6.3.3.3}
+\contentsline {subsubsection}{\numberline {6.3.3.4}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}X()}{23}{subsubsection.6.3.3.4}
+\contentsline {subsubsection}{\numberline {6.3.3.5}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Y()}{24}{subsubsection.6.3.3.5}
+\contentsline {subsection}{\numberline {6.3.4}Friends And Related Function Documentation}{24}{subsection.6.3.4}
+\contentsline {subsubsection}{\numberline {6.3.4.1}operator$\ast $\hspace {0.1cm}{\relax \fontsize {8}{9.5}\selectfont \abovedisplayskip 6\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 3\p@ plus\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 8\p@ plus2\p@ minus4\p@ \itemsep 4\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip \ttfamily [1/2]}}{24}{subsubsection.6.3.4.1}
+\contentsline {subsubsection}{\numberline {6.3.4.2}operator$\ast $\hspace {0.1cm}{\relax \fontsize {8}{9.5}\selectfont \abovedisplayskip 6\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 3\p@ plus\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 8\p@ plus2\p@ minus4\p@ \itemsep 4\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip \ttfamily [2/2]}}{24}{subsubsection.6.3.4.2}
+\contentsline {subsubsection}{\numberline {6.3.4.3}operator+}{24}{subsubsection.6.3.4.3}
+\contentsline {subsubsection}{\numberline {6.3.4.4}operator-\/}{25}{subsubsection.6.3.4.4}
+\contentsline {subsubsection}{\numberline {6.3.4.5}operator/\hspace {0.1cm}{\relax \fontsize {8}{9.5}\selectfont \abovedisplayskip 6\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 3\p@ plus\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 8\p@ plus2\p@ minus4\p@ \itemsep 4\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip \ttfamily [1/2]}}{25}{subsubsection.6.3.4.5}
+\contentsline {subsubsection}{\numberline {6.3.4.6}operator/\hspace {0.1cm}{\relax \fontsize {8}{9.5}\selectfont \abovedisplayskip 6\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 3\p@ plus\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 8\p@ plus2\p@ minus4\p@ \itemsep 4\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip \ttfamily [2/2]}}{25}{subsubsection.6.3.4.6}
+\contentsline {subsubsection}{\numberline {6.3.4.7}operator$<$$<$}{25}{subsubsection.6.3.4.7}
+\contentsline {subsection}{\numberline {6.3.5}Member Data Documentation}{25}{subsection.6.3.5}
+\contentsline {subsubsection}{\numberline {6.3.5.1}x}{26}{subsubsection.6.3.5.1}
+\contentsline {subsubsection}{\numberline {6.3.5.2}y}{26}{subsubsection.6.3.5.2}
+\contentsline {section}{\numberline {6.4}Jinks\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Draw\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:Primitive Class Reference}{26}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Detailed Description}{26}{subsection.6.4.1}
+\contentsline {section}{\numberline {6.5}Jinks\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Draw\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:Rectangle Class Reference}{27}{section.6.5}
+\contentsline {subsection}{\numberline {6.5.1}Constructor \& Destructor Documentation}{27}{subsection.6.5.1}
+\contentsline {subsubsection}{\numberline {6.5.1.1}Rectangle()}{27}{subsubsection.6.5.1.1}
+\contentsline {subsection}{\numberline {6.5.2}Member Data Documentation}{27}{subsection.6.5.2}
+\contentsline {subsubsection}{\numberline {6.5.2.1}lower\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Left}{27}{subsubsection.6.5.2.1}
+\contentsline {subsubsection}{\numberline {6.5.2.2}upper\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Right}{27}{subsubsection.6.5.2.2}
+\contentsline {chapter}{\numberline {7}File Documentation}{29}{chapter.7}
+\contentsline {section}{\numberline {7.1}/home/kenjinks/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Documents/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Jinks\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Draw/primitives.h File Reference}{29}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Detailed Description}{30}{subsection.7.1.1}

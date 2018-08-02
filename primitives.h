@@ -72,8 +72,8 @@ namespace JinksDraw
     \var double y
     \brief the y coordinate
     */
-    double x;
-    double y;
+    double x = 0.0;
+    double y = 0.0;
 
   public:
     /*!
@@ -113,6 +113,16 @@ namespace JinksDraw
     void setY(double y);
 
     /*!
+    \fn void setByPolar(double radius, double angle)
+    \brief sets the x and y coordinates based on radius and angle from origin (0,0)
+    \param double radius
+    \brief distance from origin (0,0)
+    \param double angle
+    \brief angle in radians from origin (0,0)
+    */
+    void setByPolar(double radius, double angle);
+
+    /*!
     \fn friend std::ostream& operator<<(std::ostream& os, const Point& pt)
     \brief this allows Point to have a stream representation
     \code{.cpp}
@@ -146,6 +156,33 @@ namespace JinksDraw
     \endcode
     */
     friend Point operator*(const double lhs, const Point& rhs);
+
+    /*!
+    \fn friend Point operator/(const double lhs, const Point& rhs)
+    \brief The / is to scale the coordinates of the Point
+    \code{.cpp}
+    double d = 5.0;
+
+    Point p2 = Point(5.0, 25.0) / d;
+
+    cout << p2 << endl; // (1.0, 5.0)
+    \endcode
+    */
+    friend Point operator/(const Point& lhs, const double rhs);
+
+    /*!
+    \fn friend Point operator/(const double lhs, const Point& rhs)
+    \brief The / is to scale the coordinates of the Point
+    \code{.cpp}
+    double d = 50.0;
+
+    Point p2 = d / Point(5.0, 25.0);
+
+    cout << p2 << endl; // (10.0, 2.0)
+    \endcode
+    */
+    friend Point operator/(const double lhs, const Point& rhs);
+
 
     /*!
     \fn friend Point operator+(const Point& lhs, const Point& rhs)
@@ -235,6 +272,18 @@ namespace JinksDraw
     void setEnd(Point& newEnd);
 
     /*!
+    \fn void setByPolar(Point start, double radius, double angle
+    \brief set the line with an start, radius and angle
+    \param Point start
+    \brief starting point of the line
+    \param double radius
+    \brief distance from starting point
+    \param double angle
+    \brief angle in radians from starting point
+    */
+    void setByPolar(Point origin, double radius, double angle);
+
+    /*!
     \fn double calcSlope()
     \brief calculates the slope of the line
     \return a slope as a double
@@ -286,12 +335,18 @@ namespace JinksDraw
     double getAngle();
 
     /*!
+    \fn Line getUnitLine()
+    \brief recalculates end point to be at 1 unit and same angle from start point
+    */
+    Line getUnitLine();
+
+    /*!
     \fn friend std::ostream& operator<<(std::ostream& os, const Line& ln)
     \brief this allows Line to have a stream representation
     \code{.cpp}
-    Point p1 = Point(1.0, 2.0)
-    Point p2 = Point(3.0, 4.0)
-    cout << Line(p1, p2) << endl; // ((1.0, 2.0), (3.0, 4.0))
+    Point p1 = Point(1.0, 2.0);
+    Point p2 = Point(3.0, 4.0);
+    cout << Line(p1, p2) << endl; // Line(Point(1.0, 2.0), Point(3.0, 4.0))
     \endcode
     */
     friend std::ostream& operator<<(std::ostream& os, const Line& ln);
@@ -301,10 +356,61 @@ namespace JinksDraw
   class Circle : public Primitive
   {
   private:
-    Point* origin;
-    double radius;
+    Point* origin = new Point();
+    double radius = 0.0;
   public:
-    Circle(const Point& origin, double radius);
+    Circle(Point& origin, double radius);
+
+    void reset();
+
+    /*!
+    \fn Point getOrigin()
+    \brief gets the origin
+
+    \fn double getRadius()
+    \brief gets the radius
+    */
+    Point getOrigin();
+    double getRadius();
+
+    /*!
+    \fn void setOrigin(Point& newOrigin)
+    \brief sets the origin
+
+    \fn void setRadius(double newRadius)
+    \brief sets the radius
+    */
+    void setOrigin(Point& newOrigin);
+    void setRadius(double newRadius);
+
+    /*!
+    \fn std::vector<Point> intersection(Line& line)
+    \brief calculates the intersection of this circle and a line
+    \param Line& line
+    \brief the line to intersect the circle
+    \return a vector containing the points of intersection if any
+    */
+    std::vector<Point> intersection(Line& line);
+
+    /*!
+    \fn std::vector<Point> intersection(Circle& line)
+    \brief calculates the intersection of this circle and another circle
+    \param Circle& circle
+    \brief the circle to intersect the circle
+    \return a vector containing the points of intersection if any
+    */
+    std::vector<Point> intersection(Circle& line);
+
+    /*!
+    \fn friend std::ostream& operator<<(std::ostream& os, const Circle& cr)
+    \brief this allows Circle to have a stream representation
+    \code{.cpp}
+    Point origin = Point(1.0, 2.0);
+    double radius = 10.0;
+    cout << Circle(origin, radius) << endl; // Circle(O:Point(1.0, 2.0), R:10.0)
+    \endcode
+    */
+    friend std::ostream& operator<<(std::ostream& os, const Circle& cr);
   };
 
   class Rectangle : public Primitive

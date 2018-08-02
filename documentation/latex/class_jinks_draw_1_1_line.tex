@@ -30,6 +30,8 @@ void \mbox{\hyperlink{class_jinks_draw_1_1_line_a5afb8d3fa0f0b47529014dbfb5e9dbb
 \begin{DoxyCompactList}\small\item\em sets the start to a new \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_jinks_draw_1_1_line_affea1d620e660a388d30808ac9404457}{set\+End}} (\mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} \&new\+End)
 \begin{DoxyCompactList}\small\item\em sets the end to a new \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_jinks_draw_1_1_line_a0b2ba2dbbdf5fb51dcf0eda0614e5259}{set\+By\+Polar}} (\mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} origin, double radius, double angle)
+\item 
 double \mbox{\hyperlink{class_jinks_draw_1_1_line_aea73a9418815e5d255044a6dbce37e3e}{calc\+Slope}} ()
 \begin{DoxyCompactList}\small\item\em calculates the slope of the line \end{DoxyCompactList}\item 
 std\+::vector$<$ \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} $>$ \mbox{\hyperlink{class_jinks_draw_1_1_line_a159d4850578aff530064d53c7461fa03}{intersection}} (\mbox{\hyperlink{class_jinks_draw_1_1_line}{Line}} \&intersecting\+Line)
@@ -41,7 +43,9 @@ std\+::vector$<$ \mbox{\hyperlink{class_jinks_draw_1_1_line}{Line}} $>$ \mbox{\h
 double \mbox{\hyperlink{class_jinks_draw_1_1_line_aeb77107e932c68b88be7e32344db1de4}{get\+Length}} ()
 \begin{DoxyCompactList}\small\item\em calculates and returns the length of the line \end{DoxyCompactList}\item 
 double \mbox{\hyperlink{class_jinks_draw_1_1_line_ae344d8ad62e6044cfa2a5d31e1262d00}{get\+Angle}} ()
-\begin{DoxyCompactList}\small\item\em calculates and returns the angle of the line in radians \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em calculates and returns the angle of the line in radians \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_jinks_draw_1_1_line}{Line}} \mbox{\hyperlink{class_jinks_draw_1_1_line_a0cfaefbf55c982b045562e34c576ce81}{get\+Unit\+Line}} ()
+\begin{DoxyCompactList}\small\item\em recalculates end point to be at 1 unit and same angle from start point \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -49,12 +53,23 @@ double \mbox{\hyperlink{class_jinks_draw_1_1_line_ae344d8ad62e6044cfa2a5d31e1262
 \item 
 \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} $\ast$ \mbox{\hyperlink{class_jinks_draw_1_1_line_a6c04e4d06b7c8bafff608b1ffae6169b}{end}} = new \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}}()
 \end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_jinks_draw_1_1_line_a9ed7047351912d1052d709dfa4aac3c9}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{class_jinks_draw_1_1_line}{Line}} \&ln)
+\begin{DoxyCompactList}\small\item\em this allows \mbox{\hyperlink{class_jinks_draw_1_1_line}{Line}} to have a stream representation \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 This class models a 2D line with a deque of points. 
 
-Methods include Intersection, Subpoint, Length, Angle... more methods may be created in the future 
+Methods include Intersection, Subpoint, Length, Angle... more methods may be created in the future Operator ostream is implemented 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Point p1 = Point(1.0, 2.0)}
+\DoxyCodeLine{Point p2 = Point(3.0, 4.0)}
+\DoxyCodeLine{cout << \mbox{\hyperlink{class_jinks_draw_1_1_line_a0a01ff362d3d5cb6de257cdc59fdbd7a}{Line}}(p1, p2) << endl; \textcolor{comment}{// ((1.0, 2.0), (3.0, 4.0))}}
+\end{DoxyCode}
+ 
 
 \subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{class_jinks_draw_1_1_line_a0a01ff362d3d5cb6de257cdc59fdbd7a}\label{class_jinks_draw_1_1_line_a0a01ff362d3d5cb6de257cdc59fdbd7a}} 
@@ -142,6 +157,16 @@ returns a pointer to the start \mbox{\hyperlink{class_jinks_draw_1_1_point}{Poin
 \begin{DoxyReturn}{Returns}
 a pointer to a \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} object 
 \end{DoxyReturn}
+\mbox{\Hypertarget{class_jinks_draw_1_1_line_a0cfaefbf55c982b045562e34c576ce81}\label{class_jinks_draw_1_1_line_a0cfaefbf55c982b045562e34c576ce81}} 
+\index{Jinks\+Draw\+::\+Line@{Jinks\+Draw\+::\+Line}!get\+Unit\+Line@{get\+Unit\+Line}}
+\index{get\+Unit\+Line@{get\+Unit\+Line}!Jinks\+Draw\+::\+Line@{Jinks\+Draw\+::\+Line}}
+\subsubsection{\texorpdfstring{get\+Unit\+Line()}{getUnitLine()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_jinks_draw_1_1_line}{Line}} Jinks\+Draw\+::\+Line\+::get\+Unit\+Line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+recalculates end point to be at 1 unit and same angle from start point 
+
 \mbox{\Hypertarget{class_jinks_draw_1_1_line_a159d4850578aff530064d53c7461fa03}\label{class_jinks_draw_1_1_line_a159d4850578aff530064d53c7461fa03}} 
 \index{Jinks\+Draw\+::\+Line@{Jinks\+Draw\+::\+Line}!intersection@{intersection}}
 \index{intersection@{intersection}!Jinks\+Draw\+::\+Line@{Jinks\+Draw\+::\+Line}}
@@ -169,6 +194,12 @@ a vector of \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} objects
 
 
 this method resets the class attributes to their default state 
+
+\mbox{\Hypertarget{class_jinks_draw_1_1_line_a0b2ba2dbbdf5fb51dcf0eda0614e5259}\label{class_jinks_draw_1_1_line_a0b2ba2dbbdf5fb51dcf0eda0614e5259}} 
+\index{Jinks\+Draw\+::\+Line@{Jinks\+Draw\+::\+Line}!set\+By\+Polar@{set\+By\+Polar}}
+\index{set\+By\+Polar@{set\+By\+Polar}!Jinks\+Draw\+::\+Line@{Jinks\+Draw\+::\+Line}}
+\subsubsection{\texorpdfstring{set\+By\+Polar()}{setByPolar()}}
+{\footnotesize\ttfamily void Jinks\+Draw\+::\+Line\+::set\+By\+Polar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}}}]{origin,  }\item[{double}]{radius,  }\item[{double}]{angle }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{class_jinks_draw_1_1_line_affea1d620e660a388d30808ac9404457}\label{class_jinks_draw_1_1_line_affea1d620e660a388d30808ac9404457}} 
 \index{Jinks\+Draw\+::\+Line@{Jinks\+Draw\+::\+Line}!set\+End@{set\+End}}
@@ -227,6 +258,25 @@ the default of 2 gives the midpoint
 a vector of \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} objects 
 \end{DoxyReturn}
 
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_jinks_draw_1_1_line_a9ed7047351912d1052d709dfa4aac3c9}\label{class_jinks_draw_1_1_line_a9ed7047351912d1052d709dfa4aac3c9}} 
+\index{Jinks\+Draw\+::\+Line@{Jinks\+Draw\+::\+Line}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Jinks\+Draw\+::\+Line@{Jinks\+Draw\+::\+Line}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{class_jinks_draw_1_1_line}{Line}} \&}]{ln }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+this allows \mbox{\hyperlink{class_jinks_draw_1_1_line}{Line}} to have a stream representation 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Point p1 = Point(1.0, 2.0);}
+\DoxyCodeLine{Point p2 = Point(3.0, 4.0);}
+\DoxyCodeLine{cout << \mbox{\hyperlink{class_jinks_draw_1_1_line_a0a01ff362d3d5cb6de257cdc59fdbd7a}{Line}}(p1, p2) << endl; \textcolor{comment}{// Line(Point(1.0, 2.0), Point(3.0, 4.0))}}
+\end{DoxyCode}
+ 
 
 \subsection{Member Data Documentation}
 \mbox{\Hypertarget{class_jinks_draw_1_1_line_a6c04e4d06b7c8bafff608b1ffae6169b}\label{class_jinks_draw_1_1_line_a6c04e4d06b7c8bafff608b1ffae6169b}} 

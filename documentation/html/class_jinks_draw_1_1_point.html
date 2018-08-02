@@ -108,13 +108,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a828cbcb4a21065420758e422265dc35f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_jinks_draw_1_1_point.html#a828cbcb4a21065420758e422265dc35f">setY</a> (double <a class="el" href="class_jinks_draw_1_1_point.html#ad2dbfbd07baf41cfe82737a4f347bab5">y</a>)</td></tr>
 <tr class="memdesc:a828cbcb4a21065420758e422265dc35f"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the y coordinate  <a href="#a828cbcb4a21065420758e422265dc35f">More...</a><br /></td></tr>
 <tr class="separator:a828cbcb4a21065420758e422265dc35f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dad65ea830fc616d2c1fdddf2809cb0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_jinks_draw_1_1_point.html#a8dad65ea830fc616d2c1fdddf2809cb0">setByPolar</a> (double radius, double angle)</td></tr>
+<tr class="memdesc:a8dad65ea830fc616d2c1fdddf2809cb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the x and y coordinates based on radius and angle from origin (0,0)  <a href="#a8dad65ea830fc616d2c1fdddf2809cb0">More...</a><br /></td></tr>
+<tr class="separator:a8dad65ea830fc616d2c1fdddf2809cb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a49a46c3d78c0c68260d55dacdee458de"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_jinks_draw_1_1_point.html#a49a46c3d78c0c68260d55dacdee458de">x</a></td></tr>
+<tr class="memitem:a49a46c3d78c0c68260d55dacdee458de"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_jinks_draw_1_1_point.html#a49a46c3d78c0c68260d55dacdee458de">x</a> = 0.0</td></tr>
 <tr class="memdesc:a49a46c3d78c0c68260d55dacdee458de"><td class="mdescLeft">&#160;</td><td class="mdescRight">the x coordinate  <a href="#a49a46c3d78c0c68260d55dacdee458de">More...</a><br /></td></tr>
 <tr class="separator:a49a46c3d78c0c68260d55dacdee458de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2dbfbd07baf41cfe82737a4f347bab5"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_jinks_draw_1_1_point.html#ad2dbfbd07baf41cfe82737a4f347bab5">y</a></td></tr>
+<tr class="memitem:ad2dbfbd07baf41cfe82737a4f347bab5"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_jinks_draw_1_1_point.html#ad2dbfbd07baf41cfe82737a4f347bab5">y</a> = 0.0</td></tr>
 <tr class="memdesc:ad2dbfbd07baf41cfe82737a4f347bab5"><td class="mdescLeft">&#160;</td><td class="mdescRight">the y coordinate  <a href="#ad2dbfbd07baf41cfe82737a4f347bab5">More...</a><br /></td></tr>
 <tr class="separator:ad2dbfbd07baf41cfe82737a4f347bab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -129,6 +132,11 @@ Friends</h2></td></tr>
 <tr class="memitem:a143408ed7b4a531fc9c50620a27076b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_jinks_draw_1_1_point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_jinks_draw_1_1_point.html#a143408ed7b4a531fc9c50620a27076b7">operator*</a> (const double lhs, const <a class="el" href="class_jinks_draw_1_1_point.html">Point</a> &amp;rhs)</td></tr>
 <tr class="memdesc:a143408ed7b4a531fc9c50620a27076b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The * is to scale the coordinates of the <a class="el" href="class_jinks_draw_1_1_point.html" title="This class models a point in 2D space with an x and a y coordinate.">Point</a>.  <a href="#a143408ed7b4a531fc9c50620a27076b7">More...</a><br /></td></tr>
 <tr class="separator:a143408ed7b4a531fc9c50620a27076b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa273408c569cbd473a15daf3cb65c980"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_jinks_draw_1_1_point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_jinks_draw_1_1_point.html#aa273408c569cbd473a15daf3cb65c980">operator/</a> (const <a class="el" href="class_jinks_draw_1_1_point.html">Point</a> &amp;lhs, const double rhs)</td></tr>
+<tr class="separator:aa273408c569cbd473a15daf3cb65c980"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac21d6c4989dc10c09dcdc014ce43f44e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_jinks_draw_1_1_point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_jinks_draw_1_1_point.html#ac21d6c4989dc10c09dcdc014ce43f44e">operator/</a> (const double lhs, const <a class="el" href="class_jinks_draw_1_1_point.html">Point</a> &amp;rhs)</td></tr>
+<tr class="memdesc:ac21d6c4989dc10c09dcdc014ce43f44e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The / is to scale the coordinates of the <a class="el" href="class_jinks_draw_1_1_point.html" title="This class models a point in 2D space with an x and a y coordinate.">Point</a>.  <a href="#ac21d6c4989dc10c09dcdc014ce43f44e">More...</a><br /></td></tr>
+<tr class="separator:ac21d6c4989dc10c09dcdc014ce43f44e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a607e608ebadca0198af3a6d8a001ec4a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_jinks_draw_1_1_point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_jinks_draw_1_1_point.html#a607e608ebadca0198af3a6d8a001ec4a">operator+</a> (const <a class="el" href="class_jinks_draw_1_1_point.html">Point</a> &amp;lhs, const <a class="el" href="class_jinks_draw_1_1_point.html">Point</a> &amp;rhs)</td></tr>
 <tr class="memdesc:a607e608ebadca0198af3a6d8a001ec4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows adding two Points.  <a href="#a607e608ebadca0198af3a6d8a001ec4a">More...</a><br /></td></tr>
 <tr class="separator:a607e608ebadca0198af3a6d8a001ec4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -215,6 +223,43 @@ Friends</h2></td></tr>
 
 <p>access the y coordinate </p>
 <dl class="section return"><dt>Returns</dt><dd>the y coordinate as a double </dd></dl>
+
+</div>
+</div>
+<a id="a8dad65ea830fc616d2c1fdddf2809cb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8dad65ea830fc616d2c1fdddf2809cb0">&#9670;&nbsp;</a></span>setByPolar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void JinksDraw::Point::setByPolar </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>radius</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>angle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>sets the x and y coordinates based on radius and angle from origin (0,0) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">double</td><td>radius distance from origin (0,0) </td></tr>
+    <tr><td class="paramname">double</td><td>angle angle in radians from origin (0,0) </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -423,6 +468,80 @@ Friends</h2></td></tr>
 <div class="fragment"><div class="line"><a class="code" href="class_jinks_draw_1_1_point.html#a052cf69d98628f9ee7fd6649c401c409">Point</a> p1 = <a class="code" href="class_jinks_draw_1_1_point.html#a052cf69d98628f9ee7fd6649c401c409">Point</a>(1.0, 2.0)</div><div class="line"><a class="code" href="class_jinks_draw_1_1_point.html#a052cf69d98628f9ee7fd6649c401c409">Point</a> p2 = <a class="code" href="class_jinks_draw_1_1_point.html#a052cf69d98628f9ee7fd6649c401c409">Point</a>(3.0, 4.0)</div><div class="line"></div><div class="line"><a class="code" href="class_jinks_draw_1_1_point.html#a052cf69d98628f9ee7fd6649c401c409">Point</a> p4 = p2 - p1;</div><div class="line"></div><div class="line">cout &lt;&lt; p4 &lt;&lt; endl; <span class="comment">// (2.0, 2.0)</span></div></div><!-- fragment --> 
 </div>
 </div>
+<a id="aa273408c569cbd473a15daf3cb65c980"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa273408c569cbd473a15daf3cb65c980">&#9670;&nbsp;</a></span>operator/ <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_jinks_draw_1_1_point.html">Point</a> operator/ </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_jinks_draw_1_1_point.html">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac21d6c4989dc10c09dcdc014ce43f44e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac21d6c4989dc10c09dcdc014ce43f44e">&#9670;&nbsp;</a></span>operator/ <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_jinks_draw_1_1_point.html">Point</a> operator/ </td>
+          <td>(</td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_jinks_draw_1_1_point.html">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The / is to scale the coordinates of the <a class="el" href="class_jinks_draw_1_1_point.html" title="This class models a point in 2D space with an x and a y coordinate.">Point</a>. </p>
+<div class="fragment"><div class="line"><span class="keywordtype">double</span> d = 5.0;</div><div class="line"></div><div class="line"><a class="code" href="class_jinks_draw_1_1_point.html#a052cf69d98628f9ee7fd6649c401c409">Point</a> p2 = <a class="code" href="class_jinks_draw_1_1_point.html#a052cf69d98628f9ee7fd6649c401c409">Point</a>(5.0, 25.0) / d;</div><div class="line"></div><div class="line">cout &lt;&lt; p2 &lt;&lt; endl; <span class="comment">// (1.0, 5.0)</span></div></div><!-- fragment --><div class="fragment"><div class="line"><span class="keywordtype">double</span> d = 50.0;</div><div class="line"></div><div class="line"><a class="code" href="class_jinks_draw_1_1_point.html#a052cf69d98628f9ee7fd6649c401c409">Point</a> p2 = d / <a class="code" href="class_jinks_draw_1_1_point.html#a052cf69d98628f9ee7fd6649c401c409">Point</a>(5.0, 25.0);</div><div class="line"></div><div class="line">cout &lt;&lt; p2 &lt;&lt; endl; <span class="comment">// (10.0, 2.0)</span></div></div><!-- fragment --> 
+</div>
+</div>
 <a id="a40a2c347e8c84ef40c1a170ab17fec47"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a40a2c347e8c84ef40c1a170ab17fec47">&#9670;&nbsp;</a></span>operator&lt;&lt;</h2>
 
@@ -472,7 +591,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double JinksDraw::Point::x</td>
+          <td class="memname">double JinksDraw::Point::x = 0.0</td>
         </tr>
       </table>
   </td>
@@ -496,7 +615,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double JinksDraw::Point::y</td>
+          <td class="memname">double JinksDraw::Point::y = 0.0</td>
         </tr>
       </table>
   </td>

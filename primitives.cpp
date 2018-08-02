@@ -88,9 +88,16 @@ namespace JinksDraw
       this->y = y;
     }
 
+    void Point::setByPolar(double radius, double angle)
+    {
+      this->x = cos(angle) * radius;
+      this->y = sin(angle) * radius;
+    }
+
+
     std::ostream& operator<<(std::ostream& os, const Point& pt)
     {
-      os << "(" << pt.x << "," << pt.y << ")";
+      os << "Point(" << pt.x << "," << pt.y << ")";
       return os;
     }
 
@@ -101,6 +108,15 @@ namespace JinksDraw
     Point operator*(double lhs, Point& rhs)
     {
       return rhs * lhs;
+    }
+
+    Point operator/(Point& lhs, double rhs)
+    {
+      return Point(lhs.getX() / rhs, lhs.getY() / rhs);
+    }
+    Point operator/(double lhs, Point& rhs)
+    {
+      return rhs / lhs;
     }
 
     Point operator+(Point& lhs, Point& rhs)
@@ -128,7 +144,6 @@ namespace JinksDraw
     {
       //nothing to reset
     }
-
 
     Point& Line::getStart()
     {
@@ -236,7 +251,73 @@ namespace JinksDraw
 
     std::ostream& operator<<(std::ostream& os, const Line& ln)
     {
-      os << "(" << *(ln.start) << "," << *(ln.end) << ")";
+      os << "Line(" << *(ln.start) << "," << *(ln.end) << ")";
+      return os;
+    }
+
+    double Line::getLength()
+    {
+      Point delta = this->end - this->start;
+      return sqrt( pow(delta.getX(), 2.0) + pow(delta.getY(), 2.0) );
+    }
+
+    double Line::getAngle()
+    {
+      Point delta = this->end - this->start;
+      return atan2(delta.getY(), delta.getX());
+    }
+
+    Line Line::getUnitLine()
+    {
+      //subtract the start point, scale then readd the start point
+      Point start = *(this->start);
+      Point end = *(this->end);
+      Point transEnd = end - start;
+      Point scaleEnd = transEnd / this->getLength();
+      Point newEnd = scaleEnd + start;
+      return Line(start, newEnd);
+    }
+
+    /**************************************************************************
+    Class Circle
+    **************************************************************************/
+    Circle::Circle(Point& origin, double radius)
+    {
+      this->reset();
+      this->origin = &origin;
+      this->radius = radius;
+    }
+
+    void Circle::reset()
+    {
+      //nothing to reset
+    }
+
+    Point Circle::getOrigin()
+    {
+      return *(this->origin);
+    }
+
+    double Circle::getRadius()
+    {
+      return this->radius;
+    }
+
+    void Circle::setOrigin(Point& newOrigin)
+    {
+      if (this->origin != &newOrigin)
+      {
+        this->origin = &newOrigin;
+      };
+    }
+    void Circle::setRadius(double newRadius)
+    {
+      this->radius = newRadius;
+    }
+
+    std::ostream& operator<<(std::ostream& os, const Circle& cr)
+    {
+      os << "Circle(O:" << *(cr.origin) << ", R:" << cr.radius << ")";
       return os;
     }
 }

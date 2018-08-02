@@ -13,38 +13,161 @@ Inheritance diagram for Jinks\+Draw\+:\+:Circle\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_jinks_draw_1_1_circle_a2314f653a621d22c778b39373b6d1481}{Circle}} (const \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} \&\mbox{\hyperlink{class_jinks_draw_1_1_circle_a2214560f54448ce8c0bbb41dc956abe4}{origin}}, double \mbox{\hyperlink{class_jinks_draw_1_1_circle_ad38af0c31ab4aa5d90aaf6cf83a60ab2}{radius}})
-\end{DoxyCompactItemize}
+\mbox{\hyperlink{class_jinks_draw_1_1_circle_a716c96c7f03a6ab5865f0da4dc9c4b52}{Circle}} (\mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} \&\mbox{\hyperlink{class_jinks_draw_1_1_circle_a2214560f54448ce8c0bbb41dc956abe4}{origin}}, double \mbox{\hyperlink{class_jinks_draw_1_1_circle_ad38af0c31ab4aa5d90aaf6cf83a60ab2}{radius}})
+\item 
+void \mbox{\hyperlink{class_jinks_draw_1_1_circle_aeac44e44f82737c37dfad7f8142e5754}{reset}} ()
+\item 
+\mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} \mbox{\hyperlink{class_jinks_draw_1_1_circle_aca5002abc521f58555fa0fa1c55493be}{get\+Origin}} ()
+\begin{DoxyCompactList}\small\item\em gets the origin \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_jinks_draw_1_1_circle_a846165b5fc2a414afbfe04f6d7489fb9}{get\+Radius}} ()
+\begin{DoxyCompactList}\small\item\em gets the radius \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_jinks_draw_1_1_circle_a672cdc8d12a4f9667572bf069ec7988c}{set\+Origin}} (\mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} \&new\+Origin)
+\begin{DoxyCompactList}\small\item\em sets the origin \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_jinks_draw_1_1_circle_ae22a9e43bd368b4ed2fe4898e2439466}{set\+Radius}} (double new\+Radius)
+\begin{DoxyCompactList}\small\item\em sets the radius \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} $>$ \mbox{\hyperlink{class_jinks_draw_1_1_circle_aaea3c11d7267e06784145ce450be49a8}{intersection}} (\mbox{\hyperlink{class_jinks_draw_1_1_line}{Line}} \&line)
+\begin{DoxyCompactList}\small\item\em calculates the intersection of this circle and a line \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} $>$ \mbox{\hyperlink{class_jinks_draw_1_1_circle_a6b1158a9744529ce7198b66d1bcf8973}{intersection}} (\mbox{\hyperlink{class_jinks_draw_1_1_circle}{Circle}} \&line)
+\begin{DoxyCompactList}\small\item\em calculates the intersection of this circle and another circle \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} $\ast$ \mbox{\hyperlink{class_jinks_draw_1_1_circle_a2214560f54448ce8c0bbb41dc956abe4}{origin}}
+\mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} $\ast$ \mbox{\hyperlink{class_jinks_draw_1_1_circle_a2214560f54448ce8c0bbb41dc956abe4}{origin}} = new \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}}()
 \item 
-double \mbox{\hyperlink{class_jinks_draw_1_1_circle_ad38af0c31ab4aa5d90aaf6cf83a60ab2}{radius}}
+double \mbox{\hyperlink{class_jinks_draw_1_1_circle_ad38af0c31ab4aa5d90aaf6cf83a60ab2}{radius}} = 0.\+0
 \end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_jinks_draw_1_1_circle_acde181b779d97f3d80bc38d27e08c403}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{class_jinks_draw_1_1_circle}{Circle}} \&cr)
+\begin{DoxyCompactList}\small\item\em this allows \mbox{\hyperlink{class_jinks_draw_1_1_circle}{Circle}} to have a stream representation \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{class_jinks_draw_1_1_circle_a2314f653a621d22c778b39373b6d1481}\label{class_jinks_draw_1_1_circle_a2314f653a621d22c778b39373b6d1481}} 
+\mbox{\Hypertarget{class_jinks_draw_1_1_circle_a716c96c7f03a6ab5865f0da4dc9c4b52}\label{class_jinks_draw_1_1_circle_a716c96c7f03a6ab5865f0da4dc9c4b52}} 
 \index{Jinks\+Draw\+::\+Circle@{Jinks\+Draw\+::\+Circle}!Circle@{Circle}}
 \index{Circle@{Circle}!Jinks\+Draw\+::\+Circle@{Jinks\+Draw\+::\+Circle}}
 \subsubsection{\texorpdfstring{Circle()}{Circle()}}
-{\footnotesize\ttfamily Jinks\+Draw\+::\+Circle\+::\+Circle (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} \&}]{origin,  }\item[{double}]{radius }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Jinks\+Draw\+::\+Circle\+::\+Circle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} \&}]{origin,  }\item[{double}]{radius }\end{DoxyParamCaption})}
 
 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_jinks_draw_1_1_circle_aca5002abc521f58555fa0fa1c55493be}\label{class_jinks_draw_1_1_circle_aca5002abc521f58555fa0fa1c55493be}} 
+\index{Jinks\+Draw\+::\+Circle@{Jinks\+Draw\+::\+Circle}!get\+Origin@{get\+Origin}}
+\index{get\+Origin@{get\+Origin}!Jinks\+Draw\+::\+Circle@{Jinks\+Draw\+::\+Circle}}
+\subsubsection{\texorpdfstring{get\+Origin()}{getOrigin()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} Jinks\+Draw\+::\+Circle\+::get\+Origin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+gets the origin 
+
+\mbox{\Hypertarget{class_jinks_draw_1_1_circle_a846165b5fc2a414afbfe04f6d7489fb9}\label{class_jinks_draw_1_1_circle_a846165b5fc2a414afbfe04f6d7489fb9}} 
+\index{Jinks\+Draw\+::\+Circle@{Jinks\+Draw\+::\+Circle}!get\+Radius@{get\+Radius}}
+\index{get\+Radius@{get\+Radius}!Jinks\+Draw\+::\+Circle@{Jinks\+Draw\+::\+Circle}}
+\subsubsection{\texorpdfstring{get\+Radius()}{getRadius()}}
+{\footnotesize\ttfamily double Jinks\+Draw\+::\+Circle\+::get\+Radius (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+gets the radius 
+
+\mbox{\Hypertarget{class_jinks_draw_1_1_circle_aaea3c11d7267e06784145ce450be49a8}\label{class_jinks_draw_1_1_circle_aaea3c11d7267e06784145ce450be49a8}} 
+\index{Jinks\+Draw\+::\+Circle@{Jinks\+Draw\+::\+Circle}!intersection@{intersection}}
+\index{intersection@{intersection}!Jinks\+Draw\+::\+Circle@{Jinks\+Draw\+::\+Circle}}
+\subsubsection{\texorpdfstring{intersection()}{intersection()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} $>$ Jinks\+Draw\+::\+Circle\+::intersection (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_jinks_draw_1_1_line}{Line}} \&}]{line }\end{DoxyParamCaption})}
+
+
+
+calculates the intersection of this circle and a line 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Line\&} & line the line to intersect the circle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a vector containing the points of intersection if any 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_jinks_draw_1_1_circle_a6b1158a9744529ce7198b66d1bcf8973}\label{class_jinks_draw_1_1_circle_a6b1158a9744529ce7198b66d1bcf8973}} 
+\index{Jinks\+Draw\+::\+Circle@{Jinks\+Draw\+::\+Circle}!intersection@{intersection}}
+\index{intersection@{intersection}!Jinks\+Draw\+::\+Circle@{Jinks\+Draw\+::\+Circle}}
+\subsubsection{\texorpdfstring{intersection()}{intersection()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} $>$ Jinks\+Draw\+::\+Circle\+::intersection (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_jinks_draw_1_1_circle}{Circle}} \&}]{line }\end{DoxyParamCaption})}
+
+
+
+calculates the intersection of this circle and another circle 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Circle\&} & circle the circle to intersect the circle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a vector containing the points of intersection if any 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_jinks_draw_1_1_circle_aeac44e44f82737c37dfad7f8142e5754}\label{class_jinks_draw_1_1_circle_aeac44e44f82737c37dfad7f8142e5754}} 
+\index{Jinks\+Draw\+::\+Circle@{Jinks\+Draw\+::\+Circle}!reset@{reset}}
+\index{reset@{reset}!Jinks\+Draw\+::\+Circle@{Jinks\+Draw\+::\+Circle}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Jinks\+Draw\+::\+Circle\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_jinks_draw_1_1_circle_a672cdc8d12a4f9667572bf069ec7988c}\label{class_jinks_draw_1_1_circle_a672cdc8d12a4f9667572bf069ec7988c}} 
+\index{Jinks\+Draw\+::\+Circle@{Jinks\+Draw\+::\+Circle}!set\+Origin@{set\+Origin}}
+\index{set\+Origin@{set\+Origin}!Jinks\+Draw\+::\+Circle@{Jinks\+Draw\+::\+Circle}}
+\subsubsection{\texorpdfstring{set\+Origin()}{setOrigin()}}
+{\footnotesize\ttfamily void Jinks\+Draw\+::\+Circle\+::set\+Origin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}} \&}]{new\+Origin }\end{DoxyParamCaption})}
+
+
+
+sets the origin 
+
+\mbox{\Hypertarget{class_jinks_draw_1_1_circle_ae22a9e43bd368b4ed2fe4898e2439466}\label{class_jinks_draw_1_1_circle_ae22a9e43bd368b4ed2fe4898e2439466}} 
+\index{Jinks\+Draw\+::\+Circle@{Jinks\+Draw\+::\+Circle}!set\+Radius@{set\+Radius}}
+\index{set\+Radius@{set\+Radius}!Jinks\+Draw\+::\+Circle@{Jinks\+Draw\+::\+Circle}}
+\subsubsection{\texorpdfstring{set\+Radius()}{setRadius()}}
+{\footnotesize\ttfamily void Jinks\+Draw\+::\+Circle\+::set\+Radius (\begin{DoxyParamCaption}\item[{double}]{new\+Radius }\end{DoxyParamCaption})}
+
+
+
+sets the radius 
+
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_jinks_draw_1_1_circle_acde181b779d97f3d80bc38d27e08c403}\label{class_jinks_draw_1_1_circle_acde181b779d97f3d80bc38d27e08c403}} 
+\index{Jinks\+Draw\+::\+Circle@{Jinks\+Draw\+::\+Circle}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Jinks\+Draw\+::\+Circle@{Jinks\+Draw\+::\+Circle}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{class_jinks_draw_1_1_circle}{Circle}} \&}]{cr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+this allows \mbox{\hyperlink{class_jinks_draw_1_1_circle}{Circle}} to have a stream representation 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Point \mbox{\hyperlink{class_jinks_draw_1_1_circle_a2214560f54448ce8c0bbb41dc956abe4}{origin}} = Point(1.0, 2.0);}
+\DoxyCodeLine{\textcolor{keywordtype}{double} \mbox{\hyperlink{class_jinks_draw_1_1_circle_ad38af0c31ab4aa5d90aaf6cf83a60ab2}{radius}} = 10.0;}
+\DoxyCodeLine{cout << \mbox{\hyperlink{class_jinks_draw_1_1_circle_a716c96c7f03a6ab5865f0da4dc9c4b52}{Circle}}(\mbox{\hyperlink{class_jinks_draw_1_1_circle_a2214560f54448ce8c0bbb41dc956abe4}{origin}}, \mbox{\hyperlink{class_jinks_draw_1_1_circle_ad38af0c31ab4aa5d90aaf6cf83a60ab2}{radius}}) << endl; \textcolor{comment}{// Circle(O:Point(1.0, 2.0), R:10.0)}}
+\end{DoxyCode}
+ 
 
 \subsection{Member Data Documentation}
 \mbox{\Hypertarget{class_jinks_draw_1_1_circle_a2214560f54448ce8c0bbb41dc956abe4}\label{class_jinks_draw_1_1_circle_a2214560f54448ce8c0bbb41dc956abe4}} 
 \index{Jinks\+Draw\+::\+Circle@{Jinks\+Draw\+::\+Circle}!origin@{origin}}
 \index{origin@{origin}!Jinks\+Draw\+::\+Circle@{Jinks\+Draw\+::\+Circle}}
 \subsubsection{\texorpdfstring{origin}{origin}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}}$\ast$ Jinks\+Draw\+::\+Circle\+::origin\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}}$\ast$ Jinks\+Draw\+::\+Circle\+::origin = new \mbox{\hyperlink{class_jinks_draw_1_1_point}{Point}}()\hspace{0.3cm}{\ttfamily [private]}}
 
 \mbox{\Hypertarget{class_jinks_draw_1_1_circle_ad38af0c31ab4aa5d90aaf6cf83a60ab2}\label{class_jinks_draw_1_1_circle_ad38af0c31ab4aa5d90aaf6cf83a60ab2}} 
 \index{Jinks\+Draw\+::\+Circle@{Jinks\+Draw\+::\+Circle}!radius@{radius}}
 \index{radius@{radius}!Jinks\+Draw\+::\+Circle@{Jinks\+Draw\+::\+Circle}}
 \subsubsection{\texorpdfstring{radius}{radius}}
-{\footnotesize\ttfamily double Jinks\+Draw\+::\+Circle\+::radius\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily double Jinks\+Draw\+::\+Circle\+::radius = 0.\+0\hspace{0.3cm}{\ttfamily [private]}}
 
 
 

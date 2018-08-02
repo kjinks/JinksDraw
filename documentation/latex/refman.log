@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.7.29)  1 AUG 2018 12:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.7.29)  2 AUG 2018 10:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1345,7 +1345,7 @@ LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 Chapter 6.
 (./class_jinks_draw_1_1_circle.tex
 Package epstopdf Info: Source file: <class_jinks_draw_1_1_circle.eps>
-(epstopdf)                    date: 2018-08-01 12:33:37
+(epstopdf)                    date: 2018-08-02 10:46:29
 (epstopdf)                    size: 3816 bytes
 (epstopdf)             Output file: <class_jinks_draw_1_1_circle-eps-converted-
 to.pdf>
@@ -1369,11 +1369,40 @@ Type  H <return>  for immediate help.
 l.10 ...t=2.000000cm]{class_jinks_draw_1_1_circle}
                                                   
 ? 
+[11]
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <8> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 32.
-[11]) (./class_jinks_draw_1_1_line.tex
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 51.
+LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
+(Font)              scaled to size 7.19995pt on input line 79.
+
+
+LaTeX Font Warning: Font shape `T1/pcr/bc/n' undefined
+(Font)              using `T1/pcr/m/n' instead on input line 79.
+
+[12]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 6.1 on input line 90.
+
+
+Underfull \hbox (badness 10000) detected at line 91
+[][][]
+ []
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 6.2 on input line 108.
+
+
+Underfull \hbox (badness 10000) detected at line 109
+[][][]
+ []
+
+LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <7> not available
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 122.
+[13]) (./class_jinks_draw_1_1_line.tex
 Package epstopdf Info: Source file: <class_jinks_draw_1_1_line.eps>
-(epstopdf)                    date: 2018-08-01 12:33:37
+(epstopdf)                    date: 2018-08-02 10:46:29
 (epstopdf)                    size: 3812 bytes
 (epstopdf)             Output file: <class_jinks_draw_1_1_line-eps-converted-to
 .pdf>
@@ -1397,52 +1426,69 @@ Type  H <return>  for immediate help.
 l.15 ...ght=2.000000cm]{class_jinks_draw_1_1_line}
                                                   
 ? 
-[12]
-LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <7> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 64.
- [13]
-Underfull \hbox (badness 10000) detected at line 90
-[][][]
- []
+[14] [15]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 6.3 on input line 91.
 
 
-Underfull \hbox (badness 10000) detected at line 103
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 116
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 129
-[][][]
- []
-
-[14]
-Underfull \hbox (badness 10000) detected at line 142
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 160
-[][][]
- []
-
-[15]
-Underfull \hbox (badness 10000) detected at line 208
+Underfull \hbox (badness 10000) detected at line 105
 [][][]
  []
 
 [16]
-Underfull \hbox (badness 10000) detected at line 226
+Underfull \hbox (badness 10000) detected at line 118
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 131
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 144
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 157
+[][][]
+ []
+
+[17]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 6.4 on input line 184.
+
+
+Underfull \hbox (badness 10000) detected at line 185
+[][][]
+ []
+
+[18]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 6.5 on input line 238.
+
+
+Underfull \hbox (badness 10000) detected at line 239
+[][][]
+ []
+
+[19]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 6.6 on input line 256.
+
+
+Underfull \hbox (badness 10000) detected at line 257
 [][][]
  []
 
 ) (./class_jinks_draw_1_1_point.tex
 Package epstopdf Info: Source file: <class_jinks_draw_1_1_point.eps>
-(epstopdf)                    date: 2018-08-01 12:33:37
+(epstopdf)                    date: 2018-08-02 10:46:29
 (epstopdf)                    size: 3814 bytes
 (epstopdf)             Output file: <class_jinks_draw_1_1_point-eps-converted-t
 o.pdf>
@@ -1466,27 +1512,37 @@ Type  H <return>  for immediate help.
 l.15 ...ht=2.000000cm]{class_jinks_draw_1_1_point}
                                                   
 ? 
-[17] [18]
-Underfull \hbox (badness 10000) detected at line 120
+[20] [21]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 6.7 on input line 112.
+
+[22]
+Underfull \hbox (badness 10000) detected at line 126
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 133
+Underfull \hbox (badness 10000) detected at line 139
 [][][]
  []
 
-[19]
-LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 7.19995pt on input line 172.
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 6.8 on input line 158.
 
 
-LaTeX Font Warning: Font shape `T1/pcr/bc/n' undefined
-(Font)              using `T1/pcr/m/n' instead on input line 172.
+Package longtable Warning: Column widths have changed
+(longtable)                in table 6.9 on input line 173.
 
-[20]) (./class_jinks_draw_1_1_primitive.tex [21]
+[23]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 6.10 on input line 188.
+
+[24] [25]) (./class_jinks_draw_1_1_primitive.tex
 Package epstopdf Info: Source file: <class_jinks_draw_1_1_primitive.eps>
-(epstopdf)                    date: 2018-08-01 12:33:37
+(epstopdf)                    date: 2018-08-02 10:46:29
 (epstopdf)                    size: 4138 bytes
 (epstopdf)             Output file: <class_jinks_draw_1_1_primitive-eps-convert
 ed-to.pdf>
@@ -1512,7 +1568,7 @@ l.15 ....985816cm]{class_jinks_draw_1_1_primitive}
 ? 
 ) (./class_jinks_draw_1_1_rectangle.tex
 Package epstopdf Info: Source file: <class_jinks_draw_1_1_rectangle.eps>
-(epstopdf)                    date: 2018-08-01 12:33:37
+(epstopdf)                    date: 2018-08-02 10:46:29
 (epstopdf)                    size: 3822 bytes
 (epstopdf)             Output file: <class_jinks_draw_1_1_rectangle-eps-convert
 ed-to.pdf>
@@ -1536,7 +1592,7 @@ Type  H <return>  for immediate help.
 l.10 ....000000cm]{class_jinks_draw_1_1_rectangle}
                                                   
 ? 
-[22]) [23] [24
+[26]) [27] [28
 
 ]
 Chapter 7.
@@ -1550,48 +1606,63 @@ Underfull \hbox (badness 10000) detected at line 40
 [][][]
  []
 
-[25]
+[29]
 Underfull \hbox (badness 10000) detected at line 43
 [][][]
  []
 
-) [26]
+) [30]
 No file refman.ind.
+
+Package longtable Warning: Table widths have changed. Rerun LaTeX.
+
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 183.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 183.
 (./refman.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 183.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 183.
-Package rerunfilecheck Info: File `refman.out' has not changed.
-(rerunfilecheck)             Checksum: 646075B7FEB6409AA3D67A4C6E30FE40;12624.
 
+
+Package rerunfilecheck Warning: File `refman.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `refman.out':
+(rerunfilecheck)             Before: 646075B7FEB6409AA3D67A4C6E30FE40;12624
+(rerunfilecheck)             After:  7CB3CBF9B23FF40ACCF8F3C50E3899AC;16088.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 16558 strings out of 494923
- 238075 string characters out of 6180742
- 338003 words of memory out of 5000000
- 19401 multiletter control sequences out of 15000+600000
+ 16616 strings out of 494923
+ 240305 string characters out of 6180742
+ 337003 words of memory out of 5000000
+ 19418 multiletter control sequences out of 15000+600000
  67615 words of font info for 92 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  53i,16n,92p,1159b,638s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/cour
-ier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrro8a.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (30 pages, 145257 bytes).
+pdfTeX warning (dest): name{subsubsection.6.2.4.2} has been referenced but do
+es not exist, replaced by a fixed one
+
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courie
+r/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrro8a.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on refman.pdf (34 pages, 156231 bytes).
 PDF statistics:
- 819 PDF objects out of 1000 (max. 8388607)
- 760 compressed objects within 8 object streams
- 161 named destinations out of 1000 (max. 500000)
+ 943 PDF objects out of 1000 (max. 8388607)
+ 879 compressed objects within 9 object streams
+ 202 named destinations out of 1000 (max. 500000)
  537 words of extra memory for PDF output out of 10000 (max. 10000000)
 
