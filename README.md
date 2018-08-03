@@ -1,7 +1,7 @@
 # JinksDraw 0.0
 Ken Jinks 2018
 
-##Intro
+## Intro
 
 JinksDraw is a utility for creating 2D procedural art. It is based on GTK 3.0 and Cairo.
 ## History
