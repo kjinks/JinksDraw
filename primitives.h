@@ -389,7 +389,7 @@ namespace JinksDraw
     /*!
     \var Point* origin = new Point()
     \brief origin point of circle
-    \ver double radius = 0.0
+    \var double radius = 0.0
     \brief radius of circle
     */
     Point* origin = new Point();
@@ -429,13 +429,33 @@ namespace JinksDraw
     std::vector<Point> intersection(Line& line);
 
     /*!
-    \fn std::vector<Point> intersection(Circle& line)
+    \fn std::vector<Point> intersection(Circle& circle)
     \brief calculates the intersection of this circle and another circle
     \param Circle& circle
     \brief the circle to intersect the circle
     \return a vector containing the points of intersection if any
     */
-    std::vector<Point> intersection(Circle& line);
+    std::vector<Point> intersection(Circle& circle);
+
+    /*!
+    \fn std::vector<Point> subpoint(int numDivisions, double phase)
+    \brief creates a vector of points about the circle's circumference
+    \param int numDivisions
+    \brief number of subdivisions around circle
+    \param double phase
+    \brief the angle offset in radians of the points
+    */
+    std::vector<Point> subpoint(int numDivisions, double phase);
+
+    /*!
+    \fn std::vector<Line> subline(int numDivisions, double phase)
+    \brief create a vector of line about the circle's circumference
+    \param int numDivisions
+    \brief number of subdivisions around circle
+    \param double phase
+    \brief the angle offset in radians of the lines 
+    */
+    std::vector<Line> subline(int numDivisions, double phase);
 
     /*!
     \fn friend std::ostream& operator<<(std::ostream& os, const Circle& cr)

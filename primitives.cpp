@@ -92,7 +92,7 @@ namespace JinksDraw
       this->y = y;
     }
 
-    void Point::setByPolar(double radius, double angle)
+    void Point::setByPolar(double angle, double radius)
     {
       this->x = cos(angle) * radius;
       this->y = sin(angle) * radius;
@@ -240,6 +240,8 @@ namespace JinksDraw
       return result;
     }
 
+
+
     std::vector<Line> Line::subline(int divisions)
     {
       std::vector<Point> points = this->subpoint(divisions);
@@ -339,7 +341,7 @@ namespace JinksDraw
       Point lineStart = lineAtOrigin.getStart();
       Point lineEnd = lineAtOrigin.getEnd();
 
-      Point delta = lineAtOrigin.getEnd() - lineAtOrigin.getStart();
+      Point delta = lineEnd - lineStart;
 
       double r = this->radius;
       double dx = delta.getX();
@@ -383,6 +385,102 @@ namespace JinksDraw
       }
 
       return points;
+    }
+
+    std::vector<Point> Circle::intersection(Circle& circle)
+    {
+      //transcribed Aug 2 19:56 from https://gist.github.com/xaedes/974535e71009fa8f090e
+      std::vector<Point> points;
+
+      Circle circle1 = *(this);
+      Circle circle2 = circle;
+
+      double r1 = circle1.getRadius();
+      double r2 = circle2.getRadius();
+
+      double dx = circle2.origin->getX() - circle1.origin->getX();
+      double dy = circle2.origin->getY() - circle1.origin->getY();
+
+      double d = sqrt( pow(dx, 2.0) + pow(dy, 2.0));
+
+      if (d > (r1 - r2))
+      {
+        //no solutions, circles are separate
+#ifdef _DEBUG_
+  std::cout << "separate circles found" << '\n';
+#endif
+      }
+      else if (d < abs(r1 - r2))
+      {
+        //no solutions, one circle is with the other
+#ifdef _DEBUG_
+  std::cout << "one circle within the other found" << '\n';
+#endif
+      }
+      else if (d == 0 and r1 == r2)
+      {
+        //infinite solutions, circles on top of each other
+#ifdef _DEBUG_
+  std::cout << "circles ontop of each other found" << '\n';
+#endif
+      }
+      else
+      {
+          double a = ( pow(r1, 2.0) - pow(r2, 2.0) + pow(d, 2.0)) / (2.0 * d);
+          double h = sqrt( pow(r1, 2.0) - pow(a, 2.0));
+          double xm = circle1.origin->getX() + (a * (dx / d));
+          double ym = circle1.origin->getY() + (a * (dy / d));
+          double xs1 = xm + (h * (dy / d));
+          double xs2 = xm - (h * (dy / d));
+          double ys1 = ym + (h * (dx / d));
+          double ys2 = ym - (h * (dx / d));
+
+          Point p1 = Point(xs1, ys1);
+          Point p2 = Point(xs2, ys2);
+
+          points.push_back(p1);
+          //if they are touching by tangent there will be only one point
+          if (d != (r1 + r2))
+          {
+            points.push_back(p2);
+          }
+      }
+
+      return points;
+    }
+
+    std::vector<Point> Circle::subpoint(int numDivisions, double phase)
+    {
+      std::vector<Point> points;
+      double angleStep = _PI2_ / double(numDivisions);
+
+      for (int i = 0; i < numDivisions; i++)
+      {
+        Point p = Point();
+        p.setByPolar(i * angleStep + phase, this->radius);
+        p = p + *(this->origin);
+        points.push_back(p);
+      }
+
+      return points;
+    }
+
+    std::vector<Line> Circle::subline(int numDivisions, double phase)
+    {
+      std::vector<Point> points = this->subpoint(numDivisions, phase);
+      std::vector<Line> lines;
+
+      for (int i = 0; i < numDivisions; i++)
+      {
+        //connect the adjacent points into lines
+        Line l = Line(points.at(i), points.at((i + 1) % numDivisions));
+        lines.push_back(l);
+      }
+  #ifdef _DEBUG_
+    std::cout << ">>>From Circle::subline, first line created:" << '\n';
+    std::cout << ">>>line " << lines.at(0) << '\n';
+  #endif
+      return lines;
     }
 
     std::ostream& operator<<(std::ostream& os, const Circle& cr)
