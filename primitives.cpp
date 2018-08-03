@@ -70,10 +70,16 @@ namespace JinksDraw
     {
       this->x = x;
       this->y = y;
+#ifdef _DEBUG_
+  std::cout << ">>>Point created x address " << &this->x << '\n';
+#endif
     }
 
     double Point::getX()
     {
+#ifdef _DEBUG_
+  std::cout << ">>>Reading point x at address " << &this->x << '\n';
+#endif
       return this->x;
     }
 
@@ -101,6 +107,9 @@ namespace JinksDraw
 
     std::ostream& operator<<(std::ostream& os, const Point& pt)
     {
+#ifdef _DEBUG_
+  std::cout << "(x address " << &pt.x << ")" << '\n';
+#endif
       os << "Point(" << pt.x << "," << pt.y << ")";
       return os;
     }
@@ -181,9 +190,9 @@ namespace JinksDraw
       double height = this->getEnd().getY() - this->getStart().getY();
 
 #ifdef _DEBUG_
-  std::cout << "\nDEBUG Line::calcSlope" << '\n';
+  std::cout << ">>>DEBUG Line::calcSlope" << '\n';
 
-  std::cout << "width :" << width << " height :" << height << '\n';
+  std::cout << ">>>width :" << width << " height :" << height << '\n';
 #endif
 
       if (width == 0.0)
@@ -407,21 +416,21 @@ namespace JinksDraw
       {
         //no solutions, circles are separate
 #ifdef _DEBUG_
-  std::cout << "separate circles found" << '\n';
+  std::cout << ">>>separate circles found" << '\n';
 #endif
       }
       else if (d < abs(r1 - r2))
       {
         //no solutions, one circle is with the other
 #ifdef _DEBUG_
-  std::cout << "one circle within the other found" << '\n';
+  std::cout << ">>>one circle within the other found" << '\n';
 #endif
       }
       else if (d == 0 and r1 == r2)
       {
         //infinite solutions, circles on top of each other
 #ifdef _DEBUG_
-  std::cout << "circles ontop of each other found" << '\n';
+  std::cout << ">>>circles ontop of each other found" << '\n';
 #endif
       }
       else

@@ -244,6 +244,7 @@ bool testClassCircle()
   std::vector<Line> lines = circle1.subline(10, 0.0);
   std::cout << "Circle:subline passed test with " << lines.size() << " lines created." << '\n';
   std::cout << "from " << circle1 << '\n';
+  std::cout << "First line found :" << lines.at(0) << '\n';
   for (auto line = lines.begin(); line != lines.end(); ++line)
   {
     std::cout << "Line found " << *line << '\n';
