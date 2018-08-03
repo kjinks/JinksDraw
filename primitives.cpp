@@ -114,29 +114,29 @@ namespace JinksDraw
       return os;
     }
 
-    Point operator*(Point& lhs, double rhs)
+    Point operator*(Point lhs, double rhs)
     {
       return Point(lhs.getX() * rhs, lhs.getY() * rhs);
     }
-    Point operator*(double lhs, Point& rhs)
+    Point operator*(double lhs, Point rhs)
     {
       return rhs * lhs;
     }
 
-    Point operator/(Point& lhs, double rhs)
+    Point operator/(Point lhs, double rhs)
     {
       return Point(lhs.getX() / rhs, lhs.getY() / rhs);
     }
-    Point operator/(double lhs, Point& rhs)
+    Point operator/(double lhs, Point rhs)
     {
       return rhs / lhs;
     }
 
-    Point operator+(Point& lhs, Point& rhs)
+    Point operator+(Point lhs, Point rhs)
     {
       return Point(lhs.getX() + rhs.getX(), lhs.getY() + rhs.getY());
     }
-    Point operator-(Point& lhs, Point& rhs)
+    Point operator-(Point lhs, Point rhs)
     {
       return Point(lhs.getX() - rhs.getX(), lhs.getY() - rhs.getY());
     }
@@ -207,6 +207,7 @@ namespace JinksDraw
     std::vector<Point> Line::intersection(Line& intersectingLine)
     {
       std::vector<Point> result;
+
 
       double x1 = this->getStart().getX();
       double y1 = this->getStart().getY();
@@ -465,10 +466,10 @@ namespace JinksDraw
 
       for (int i = 0; i < numDivisions; i++)
       {
-        Point p = Point();
-        p.setByPolar(i * angleStep + phase, this->radius);
-        p = p + *(this->origin);
-        points.push_back(p);
+        Point* p = new Point();
+        p->setByPolar(i * angleStep + phase, this->radius);
+        *p = *p + *(this->origin);
+        points.push_back(*p);
       }
 
       return points;
@@ -478,6 +479,13 @@ namespace JinksDraw
     {
       std::vector<Point> points = this->subpoint(numDivisions, phase);
       std::vector<Line> lines;
+
+#ifdef _DEBUG_
+  Point* temp1 = new Point(100.0, 100.0);
+  Point* temp2 = new Point(100.0, 100.0);
+  Line tempLine = Line(*temp1, *temp2);
+  lines.push_back(tempLine);
+#endif
 
       for (int i = 0; i < numDivisions; i++)
       {

@@ -142,7 +142,7 @@ namespace JinksDraw
     cout << p1 << endl; // (10.0, 20.0)
     \endcode
     */
-    friend Point operator*(const Point& lhs, const double rhs);
+    friend Point operator*(Point lhs, double rhs);
 
     /*!
     \fn friend Point operator*(const double lhs, const Point& rhs)
@@ -155,7 +155,7 @@ namespace JinksDraw
     cout << p2 << endl; // (30.0, 40.0)
     \endcode
     */
-    friend Point operator*(const double lhs, const Point& rhs);
+    friend Point operator*(double lhs, Point rhs);
 
     /*!
     \fn friend Point operator/(const double lhs, const Point& rhs)
@@ -168,7 +168,7 @@ namespace JinksDraw
     cout << p2 << endl; // (1.0, 5.0)
     \endcode
     */
-    friend Point operator/(const Point& lhs, const double rhs);
+    friend Point operator/(Point lhs, double rhs);
 
     /*!
     \fn friend Point operator/(const double lhs, const Point& rhs)
@@ -181,7 +181,7 @@ namespace JinksDraw
     cout << p2 << endl; // (10.0, 2.0)
     \endcode
     */
-    friend Point operator/(const double lhs, const Point& rhs);
+    friend Point operator/(double lhs, Point rhs);
 
 
     /*!
@@ -196,7 +196,7 @@ namespace JinksDraw
     cout << p3 << endl; // (4.0, 6.0)
     \endcode
     */
-    friend Point operator+(const Point& lhs, const Point& rhs);
+    friend Point operator+(Point lhs, Point rhs);
 
     /*!
     \fn friend Point operator-(const Point& lhs, const Point& rhs)
@@ -210,7 +210,7 @@ namespace JinksDraw
     cout << p4 << endl; // (2.0, 2.0)
     \endcode
     */
-    friend Point operator-(const Point& lhs, const Point& rhs);
+    friend Point operator-(Point lhs, Point rhs);
   };
 
 
@@ -453,7 +453,7 @@ namespace JinksDraw
     \param int numDivisions
     \brief number of subdivisions around circle
     \param double phase
-    \brief the angle offset in radians of the lines 
+    \brief the angle offset in radians of the lines
     */
     std::vector<Line> subline(int numDivisions, double phase);
 
