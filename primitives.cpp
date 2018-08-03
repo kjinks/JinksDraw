@@ -479,6 +479,8 @@ namespace JinksDraw
   #ifdef _DEBUG_
     std::cout << ">>>From Circle::subline, first line created:" << '\n';
     std::cout << ">>>line " << lines.at(0) << '\n';
+    std::cout << ">>>start " << lines.at(0).getStart() << '\n';
+    std::cout << ">>>x " << lines.at(0).getStart().getX() << '\n';
   #endif
       return lines;
     }
